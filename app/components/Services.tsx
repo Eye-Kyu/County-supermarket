@@ -35,15 +35,6 @@ export default function ServicesSection() {
           <h2 className="text-3xl md:text-5xl font-extrabold tracking-wide">
             OUR SERVICES
           </h2>
-
-          <div className="flex items-center justify-center gap-4 mb-4">
-            <span className="w-6 h-[0.5] bg-orange-500" />
-            <p className="stext-sm ">
-              Enjoy delightful pastries, gourmet meals, and fresh cuts at the
-              Bakery, Deli, Butchery, and many more in our branches.
-            </p>
-            <span className="w-6 h-[0.5] bg-orange-500" />
-          </div>
         </div>
 
         {/* Grid */}

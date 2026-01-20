@@ -11,7 +11,7 @@ export default function Navbar() {
 
   const links = [
     { name: "Home", href: "/" },
-    { name: "Our Services", href: "/services" },
+    { name: "Our Services", href: "/Services" },
     { name: "Our Story", href: "/about" },
     { name: "Contact", href: "/contact" },
   ];
@@ -28,7 +28,7 @@ export default function Navbar() {
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
-              src="/global assets/Logo.jpeg"
+              src="/global assets/Logo.jpg"
               alt="Logo"
               width={60}
               height={50}

@@ -9,7 +9,7 @@ type Location = {
 
 const locations: Location[] = [
   {
-    label: "County Supermarket Headquarters Branch - Kenol, Murang'a",
+    label: "County Supermarket Head Office- Kenol, Murang'a",
     query: "County Supermarket Kenol Murang'a Kenya",
   },
   {
@@ -38,7 +38,7 @@ export default function Maps() {
   const [selectedIndex, setSelectedIndex] = useState<number>(0);
 
   const mapSrc = `https://www.google.com/maps?q=${encodeURIComponent(
-    locations[selectedIndex].query
+    locations[selectedIndex].query,
   )}&output=embed`;
 
   return (

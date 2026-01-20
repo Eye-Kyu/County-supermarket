@@ -1,3 +1,4 @@
+import Image from "next/image";
 import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
 
 export default function Footer() {
@@ -5,17 +6,27 @@ export default function Footer() {
     <footer className="w-full bg-gray-800 text-gray-300 py-10 px-6 sm:px-12">
       <div className="max-w-7xl mx-auto flex flex-wrap gap-10 justify-between">
         {/* About Us */}
-        <section className="flex-1 min-w-[280px] max-w-md">
+        <section className="flex-1 min-w-70 max-w-md">
           <h4 className="text-white text-xl font-semibold mb-4">About Us</h4>
-          <p className="leading-relaxed">
+          <Image
+            className="mb-4"
+            src="/global assets/Logo.jpg"
+            alt="Logo"
+            width={80}
+            height={70}
+          />
+
+          {/*<p className="leading-relaxed">
             County Supermarket is a beloved local Kenyan chain with a presence
             in central Kenya. Operating for over 15 years, this homegrown gem
             has expanded to 6 branches, catering to multiple counties.
           </p>
-        </section>
+       
 
         {/* Quick Links */}
-        <nav aria-label="Quick Links" className="flex-1 min-w-[160px] max-w-xs">
+        </section>
+
+        <nav aria-label="Quick Links" className="flex-1 min-w-40 max-w-xs">
           <h4 className="text-white text-xl font-semibold mb-4">Quick Links</h4>
           <ul className="space-y-3">
             {[
@@ -37,7 +48,7 @@ export default function Footer() {
         </nav>
 
         {/* Socials and Contact */}
-        <section className="flex-1 min-w-[200px] max-w-xs">
+        <section className="flex-1 min-w-50 max-w-xs">
           <h4 className="text-white text-xl font-semibold mb-4">Follow Us</h4>
           <div className="flex space-x-6 mb-6 text-gray-300">
             <a
@@ -53,13 +64,6 @@ export default function Footer() {
               className="hover:text-white transition-colors duration-200"
             >
               <FaTwitter size={24} />
-            </a>
-            <a
-              href="#"
-              aria-label="Instagram"
-              className="hover:text-white transition-colors duration-200"
-            >
-              <FaInstagram size={24} />
             </a>
           </div>
 
