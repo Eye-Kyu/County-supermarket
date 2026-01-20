@@ -125,18 +125,20 @@ export default function HeroSlider() {
       <div className="relative z-10 flex h-full items-center justify-center px-4 text-center">
         <div className="max-w-3xl text-white">
           <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4">
-            COUNTY NI HOME
+            Your Local Shopping Destination
           </h1>
 
           <h2 className="text-base sm:text-lg md:text-2xl mb-8 opacity-90">
-            Affordable & convinient shopping
+            Discover a wide range of goods and gourmet delights ata County
+            Supermarket, it&#39;s where exceptional service and affordability
+            meet.
           </h2>
 
           <Link
             href="/contact"
             className="inline-block rounded-xl bg-blue-600 px-6 py-3 md:px-2 md:py-2 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold hover:bg-blue-700 transition"
           >
-            Get Started
+            Contact Us
           </Link>
         </div>
       </div>
