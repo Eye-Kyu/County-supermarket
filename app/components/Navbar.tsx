@@ -12,7 +12,7 @@ export default function Navbar() {
   const links = [
     { name: "Home", href: "/" },
     { name: "Our Services", href: "/Services" },
-    { name: "Our Story", href: "/about" },
+    { name: "Our Story", href: "/Story" },
     { name: "Contact", href: "/contact" },
   ];
 
@@ -30,7 +30,7 @@ export default function Navbar() {
             <Image
               src="/global assets/Logo.jpg"
               alt="Logo"
-              width={60}
+              width={65}
               height={50}
               priority
             />

@@ -1,6 +1,7 @@
 import Hero from "../components/HeroServices";
 import WhyShopWithUs from "../components/ourservices/ServicesWhy";
 import PageService from "../components/ourservices/Services";
+import OurStory from "../components/ourstory/Story";
 
 export default function Services() {
   return (
@@ -12,6 +13,7 @@ export default function Services() {
       <div className="bg-white z-10 relative">
         <PageService />
         <WhyShopWithUs />
+        <OurStory />
       </div>
     </div>
   );
