@@ -6,12 +6,12 @@ export default function Services3() {
       id="Services"
       className="px-6 flex min-h-screen items-center justify-between gap-x-16"
     >
-      <div className="w-1/2 pr-4">
+      <div className="w-1/2">
         <AisleCard
           title="ELECTRONICS"
           text="LOREM IPSUM SIT BGUOIWBAIB XSAIOCBD OABCUIAIC biuouiaanc dnsauifpcwiuca."
           image="/Images/Hero/hero1.webp"
-          className="pl-8 pr-8"
+          className=""
           reverse
         />
       </div>
@@ -22,7 +22,7 @@ export default function Services3() {
           text="LOREM IPSUM SIT BGUOIWBAIB XSAIOCBD OABCUIAIC biuouiaanc dnsauifpcwiuca."
           image="/Images/Hero/Groceries.webp"
           reverse
-          className="pl-8"
+          className=""
         />
       </div>
     </section>
