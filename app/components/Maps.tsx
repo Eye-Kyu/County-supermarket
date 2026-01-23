@@ -76,7 +76,7 @@ export default function Maps() {
       </div>
 
       {/* Map */}
-      <div className="md:w-1/2 w-full h-[24rem] md:h-auto rounded-xl overflow-hidden shadow-lg bg-white">
+      <div className="md:w-1/2 w-full h-96 md:h-auto rounded-xl overflow-hidden shadow-lg bg-white">
         <iframe
           src={mapSrc}
           className="w-full h-full"

@@ -24,11 +24,11 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 bg-white border-b border-gray-200 shadow-sm">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="flex h-7 items-center justify-between">
+        <div className="flex h-4 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
-              src="/global assets/Logo.jpg"
+              src="/global assets/Logo.png"
               alt="Logo"
               width={85}
               height={50}

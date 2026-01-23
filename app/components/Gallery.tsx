@@ -61,7 +61,7 @@ export default function Gallery() {
       <div className="relative px-4 md:px-10 lg:px-16">
         <div className="overflow-hidden rounded-2xl">
           <div
-            className="flex gap-4 transition-transform duration-[900ms] ease-in-out"
+            className="flex gap-4 transition-transform duration-900 ease-in-out"
             style={{
               transform: `translateX(-${(100 / visible) * index}%)`,
             }}
@@ -69,7 +69,7 @@ export default function Gallery() {
             {images.map((src, i) => (
               <div
                 key={i}
-                className="relative h-[260px] md:h-[420px] lg:h-[480px] shrink-0"
+                className="relative h-65 md:h-105 lg:h-120 shrink-0"
                 style={{ width: `${100 / visible}%` }}
               >
                 <Image

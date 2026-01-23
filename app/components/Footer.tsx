@@ -1,5 +1,5 @@
 import Image from "next/image";
-import { FaFacebookF, FaTwitter, FaInstagram } from "react-icons/fa";
+import { FaFacebookF, FaTwitter } from "react-icons/fa";
 
 export default function Footer() {
   return (
@@ -10,7 +10,7 @@ export default function Footer() {
           <h4 className="text-white text-xl font-semibold mb-4">About Us</h4>
           <Image
             className="mb-4"
-            src="/global assets/Logo.jpg"
+            src="/global assets/Logo.png"
             alt="Logo"
             width={80}
             height={70}

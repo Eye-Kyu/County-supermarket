@@ -22,13 +22,13 @@ export default function AisleCard({
       } ${className}`}
     >
       {/* TEXT CARD */}
-      <div className="w-full md:w-1/2 bg-[#23265e] rounded-[32px] p-8 flex flex-col justify-center">
+      <div className="w-full md:w-1/2 bg-[#23265e] rounded-4xl p-8 flex flex-col justify-center">
         <h3 className="font-serif text-2xl mb-4 text-black">{title}</h3>
         <p className="text-sm leading-relaxed text-black">{text}</p>
       </div>
 
       {/* IMAGE CARD */}
-      <div className="w-full md:w-1/2 relative rounded-[32px] overflow-hidden">
+      <div className="w-full md:w-1/2 relative rounded-4xl overflow-hidden">
         <Image src={image} alt={title} fill className="object-cover" priority />
       </div>
     </div>
