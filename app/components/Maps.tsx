@@ -45,7 +45,7 @@ export default function Maps() {
     <section className="flex flex-col md:flex-row w-full min-h-screen p-6 md:p-12 gap-10">
       {/* Locations */}
       <div className="md:w-1/2 w-full">
-        <h2 className="text-2xl font-bold mb-8">Our Locations</h2>
+        <h2 className="text-2xl lg:text-3xl font-bold mb-8">Where We Are</h2>
 
         <form className="flex flex-col gap-3">
           {locations.map((location, index) => {
