@@ -13,7 +13,7 @@ export default function Navbar() {
     { name: "Home", href: "/" },
     { name: "Our Services", href: "/Services" },
     { name: "Our Story", href: "/Story" },
-    { name: "Contact", href: "/contact" },
+    { name: "Contact", href: "/Contact" },
   ];
 
   const isActive = (href: string) =>

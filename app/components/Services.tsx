@@ -33,7 +33,7 @@ export default function ServicesSection() {
       <div className="mx-auto max-w-7xl px-6">
         <div className="text-center mb-16 space-y-8">
           <h2 className="text-3xl md:text-5xl font-extrabold tracking-wide">
-            OUR SERVICES
+            Explore Our Aisles
           </h2>
         </div>
 
@@ -61,12 +61,13 @@ export default function ServicesSection() {
           ))}
         </div>
 
-        {/* CTA */}
+        {/* CTA 
         <div className="mt-16 flex justify-center">
           <button className="rounded-full bg-blue-600 px-8 py-3 text-sm font-medium text-white transition hover:bg-blue-700">
             View All Services
           </button>
         </div>
+        */}
       </div>
     </section>
   );

@@ -30,9 +30,10 @@ export default function OurStory() {
 
         {/* RIGHT — TEXT CONTENT */}
         <div className="max-w-xl">
-          <p className="uppercase tracking-[0.3em] text-sm text-gray-400 mb-4">
+          {/*   <p className="uppercase tracking-[0.3em] text-sm text-gray-400 mb-4">
             A Brief Heading
           </p>
+          */}
 
           <h2 className="text-4xl md:text-5xl font-extrabold text-[#0b1b3f] mb-6">
             Our Story
