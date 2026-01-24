@@ -7,7 +7,7 @@ export default function OurStory() {
         {/* LEFT — IMAGE COLUMN */}
         <div className="flex flex-col gap-8 h-[80vh]">
           {/* Top Image */}
-          <div className="relative flex-1 bg-gray-100 rounded-md">
+          <div className="relative flex-1 rounded-md">
             <Image
               src="/Images/Hero/hero2.webp"
               alt="County Supermarket exterior"
@@ -18,7 +18,7 @@ export default function OurStory() {
           </div>
 
           {/* Bottom Image */}
-          <div className="relative flex-[1.3] bg-gray-100 rounded-md">
+          <div className="relative flex-[1.3] rounded-md">
             <Image
               src="/Images/Hero/hero1.webp"
               alt="County Supermarket interior"
@@ -29,13 +29,13 @@ export default function OurStory() {
         </div>
 
         {/* RIGHT — TEXT CONTENT */}
-        <div className="max-w-xl">
+        <div className="max-w-xl py-12">
           {/*   <p className="uppercase tracking-[0.3em] text-sm text-gray-400 mb-4">
             A Brief Heading
           </p>
           */}
 
-          <h2 className="text-4xl md:text-5xl font-extrabold text-[#0b1b3f] mb-6">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-blue-950 mb-6">
             Our Story
           </h2>
 

@@ -6,11 +6,11 @@ export default function WhyShopWithUs() {
       <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
         {/* LEFT: Text content */}
         <div className="max-w-xl">
-          <p className="text-xs tracking-widest text-blue-700 font-semibold mb-4">
+          <p className="text-xs tracking-widest text-orange-500 font-semibold mb-4">
             SERVICES
           </p>
 
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="md:text-center  text-3xl md:text-4xl font-bold text-blue-950 mb-16">
             Why Shop With Us
           </h2>
 
@@ -24,13 +24,9 @@ export default function WhyShopWithUs() {
             exceptional customer service, ensuring every visit meets your needs.
             Shop with us for value and satisfaction!
           </p>
-
-          <a
-            href="#"
-            className="inline-block text-blue-700 font-medium underline underline-offset-4 hover:text-blue-900 transition"
-          >
+          <button className="px-6 py-3 font-bold border-b border-black text-orange-500 transition-all duration-300 hover:bg-orange-500 hover:text-white hover:rounded-lg hover:border-b-0">
             Contact Us
-          </a>
+          </button>
         </div>
 
         {/* MIDDLE: Store image */}

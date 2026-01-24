@@ -27,7 +27,7 @@ export default function Footer() {
         </section>
 
         <nav aria-label="Quick Links" className="flex-1 min-w-40 max-w-xs">
-          <h4 className="text-white text-xl  font-semibold mb-4">
+          <h4 className="text-white text-lg  font-semibold mb-4">
             QUICK LINKS
           </h4>
           <ul className="space-y-3">
@@ -39,7 +39,7 @@ export default function Footer() {
               <li key={href}>
                 <a
                   href={href}
-                  className="hover:text-white transition-colors duration-200"
+                  className="hover:text-white transition-colors duration-200 text-sm"
                 >
                   {label}
                 </a>
@@ -49,7 +49,9 @@ export default function Footer() {
         </nav>
 
         <nav aria-label="Company" className="flex-1 min-w-40 max-w-xs">
-          <h4 className="text-white text-xl font-semibold mb-4">COMPANY</h4>
+          <h4 className="text-white md:text-lg text-lg font-semibold mb-4">
+            COMPANY
+          </h4>
           <ul className="space-y-3">
             {[
               { href: "#", label: "About Us" },
@@ -69,7 +71,7 @@ export default function Footer() {
 
         {/* Socials and Contact */}
         <section className="flex-1 min-w-50 max-w-xs">
-          <h4 className="text-white text-xl font-semibold mb-4">SOCIALS</h4>
+          <h4 className="text-white text-lg font-semibold mb-4">SOCIALS</h4>
           <div className="flex space-x-6 mb-6 text-gray-300">
             <a
               href="#"
@@ -88,7 +90,7 @@ export default function Footer() {
           </div>
 
           <div>
-            <h4 className="text-white text-xl font-semibold mb-2">EMAIL</h4>
+            <h4 className="text-white text-lg font-semibold mb-2">EMAIL</h4>
             <a
               href="mailto:info@countysupermarket.co.ke"
               className="block hover:text-white transition-colors duration-200"

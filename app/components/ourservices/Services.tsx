@@ -73,7 +73,7 @@ export default function ServicesZigZag() {
                 }`}
               >
                 {/* Image */}
-                <div className="w-full md:w-1/2">
+                <div className="w-full md:w-3/5">
                   <div className="relative aspect-square w-full overflow-hidden rounded-sm">
                     <Image
                       src={service.image}
@@ -85,14 +85,14 @@ export default function ServicesZigZag() {
                 </div>
 
                 {/* Text */}
-                <div className="w-full md:w-1/2">
-                  <h2 className="mb-3 text-md md:text-3xl uppercase tracking-wide text-blue-700">
+                <div className="w-full md:w-2/5">
+                  <h2 className="mb-3 text-lg font-semibold md:font-medium md:text-2xl uppercase tracking-wide text-blue-950">
                     {service.title}
                   </h2>
 
-                  <div className="mb-4 h-0.5 w-12 bg-blue-700" />
+                  <div className="mb-4 h-0.5 w-12 bg-orange-500" />
 
-                  <p className="text-sm leading-relaxed text-gray-600">
+                  <p className="text-sm leading-relaxed text-black">
                     {service.description}
                   </p>
                 </div>

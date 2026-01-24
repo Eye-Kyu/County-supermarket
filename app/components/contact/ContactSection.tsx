@@ -37,13 +37,12 @@ export default function ContactSection() {
               <div className="flex items-center gap-4 text-gray-600">
                 <FaFacebookF className="cursor-pointer hover:text-orange-500" />
                 <FaTwitter className="cursor-pointer hover:text-orange-500" />
-                <FaInstagram className="cursor-pointer hover:text-orange-500" />
               </div>
             </div>
 
             {/* Contact Info */}
             <div>
-              <p className="text-xs font-semibold tracking-widest text-blue-700 mb-6">
+              <p className="text-xs font-semibold tracking-widest text-blue-950 mb-6">
                 [ OUR CONTACT ]
               </p>
 
@@ -143,7 +142,7 @@ export default function ContactSection() {
 
             <button
               type="submit"
-              className="bg-blue-600 text-white px-6 py-2 rounded-md hover:bg-blue-700 transition"
+              className="bg-blue-950/70 text-white px-6 py-2 rounded-md hover:bg-blue-950 transition"
             >
               Submit Form
             </button>

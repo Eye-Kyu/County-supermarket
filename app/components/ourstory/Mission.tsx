@@ -6,11 +6,11 @@ export default function Mission() {
       <div className="mx-auto max-w-7xl grid grid-cols-1 lg:grid-cols-3 gap-12 items-center">
         {/* LEFT: Text content */}
         <div className="max-w-xl">
-          <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-6">
+          <h2 className="text-3xl md:text-4xl font-extrabold text-blue-950 mb-6">
             Our Mission
           </h2>
 
-          <p className="text-gray-600 leading-relaxed mb-6">
+          <p className="text-gray-600 text-sm md:text-base leading-relaxed mb-6">
             At County Supermarket, we prioritize your convenience with a range
             At County Supermarket, our mission is to deliver an exceptional
             shopping experience by offering affordability, high-quality
