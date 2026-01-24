@@ -55,7 +55,7 @@ export default function Services2() {
           </div>
 
           {/* Desktop only */}
-          <div className="hidden md:block w-full md:w-1/2">
+          <div className="hidden">
             <AisleCard
               title="GROCERIES"
               text="Fresh from local farms to international delights, our grocery aisle is stocked with everything you need for your kitchen and more."
