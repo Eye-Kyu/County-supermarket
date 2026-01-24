@@ -7,12 +7,12 @@ export default function Footer() {
       <div className="max-w-7xl mx-auto flex flex-wrap gap-10 justify-between">
         {/* About Us */}
         <section className="flex-1 min-w-70 max-w-md">
-          <h4 className="text-white text-xl font-semibold mb-4">About Us</h4>
+          <h4 className="text-white text-xl font-semibold pb-4">About Us</h4>
           <Image
-            className="mb-4"
+            className="pb-4"
             src="/global assets/Logo.png"
             alt="Logo"
-            width={80}
+            width={130}
             height={70}
           />
 
@@ -99,7 +99,7 @@ export default function Footer() {
         </section>
       </div>
 
-      <div className="mt-12 border-t border-gray-700 pt-6 text-sm text-gray-500 text-center">
+      <div className="mt-6 pt-6 border-t border-gray-700 text-sm text-gray-500 text-center">
         &copy; {new Date().getFullYear()} County Supermarket. All rights
         reserved.
       </div>

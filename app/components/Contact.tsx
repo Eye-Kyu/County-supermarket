@@ -10,7 +10,7 @@ import {
 
 export default function Contact() {
   return (
-    <section className="w-full py-20 px-6 md:px-16 bg-white">
+    <section className="w-full py-20 px-6 md:px-16 bg-gray-200 ">
       {/* Header */}
       <div className="text-center mb-16">
         <div className="flex items-center justify-center gap-4 mb-4">
@@ -21,7 +21,7 @@ export default function Contact() {
           <span className="w-6 h-[2px] bg-orange-500" />
         </div>
 
-        <h2 className="text-3xl md:text-5xl font-extrabold tracking-wide">
+        <h2 className="text-center text-3xl md:text-4xl font-bold text-blue-950 mb-16">
           LET&apos;S GET IN TOUCH
         </h2>
       </div>
@@ -42,7 +42,7 @@ export default function Contact() {
               <input
                 type="text"
                 placeholder="First Name"
-                className="w-full border border-gray-300 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+                className="w-full border border-blue-950 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
               />
             </div>
             <div>
@@ -50,7 +50,7 @@ export default function Contact() {
               <input
                 type="text"
                 placeholder="Last Name"
-                className="w-full border border-gray-300 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+                className="w-full border border-blue-950 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
               />
             </div>
           </div>
@@ -63,7 +63,7 @@ export default function Contact() {
             <input
               type="email"
               placeholder="Email Address"
-              className="w-full border border-gray-300 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+              className="w-full border border-blue-950 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
             />
           </div>
 
@@ -73,7 +73,7 @@ export default function Contact() {
             <input
               type="text"
               placeholder="Subject"
-              className="w-full border border-gray-300 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
+              className="w-full border border-blue-950 px-4 py-3 rounded-md focus:outline-none focus:ring-2 focus:ring-orange-500"
             />
           </div>
 
@@ -85,51 +85,58 @@ export default function Contact() {
             <textarea
               rows={5}
               placeholder="Your Message"
-              className="w-full border border-gray-300 px-4 py-3 rounded-md resize-none focus:outline-none focus:ring-2 focus:ring-orange-500"
+              className="w-full border border-blue-950 px-4 py-3 rounded-md resize-none focus:outline-none focus:ring-2 focus:ring-orange-500"
             />
           </div>
 
           {/* Button */}
           <button
             type="submit"
-            className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-md font-semibold transition"
+            className="bg-blue-950 hover:bg-blue-900 text-white px-6 py-3 rounded-xl font-semibold transition"
           >
             Submit Form
           </button>
         </form>
 
         {/* CONTACT INFO */}
-        <div className="bg-gray-50 p-8 rounded-lg space-y-10">
+        <div className="bg-gray-400 py-8 px-4 sm:px-6 lg:px-8 rounded-lg space-y-10">
+          {/* Contact Details */}
           <div>
-            <div className="flex items-center gap-3 mb-4">
+            <div className="flex items-center gap-3 mb-6">
               <span className="w-[3px] h-6 bg-orange-500" />
-              <h3 className="font-bold text-lg">OUR CONTACT</h3>
+              <h3 className="font-bold text-base sm:text-lg tracking-wide">
+                OUR CONTACT
+              </h3>
             </div>
 
             <div className="space-y-6">
               {/* Email */}
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 flex items-center justify-center rounded-full bg-orange-500 text-white">
-                  <FaEnvelope />
+              <div className="flex items-start sm:items-center gap-4">
+                <div className="w-11 h-11 sm:w-12 sm:h-12 flex items-center justify-center rounded-full bg-blue-950 text-white shrink-0">
+                  <FaEnvelope className="text-lg" />
                 </div>
                 <div>
-                  <p className="text-orange-500 font-semibold text-sm">
+                  <p className="text-orange-400 font-semibold text-xs sm:text-sm">
                     Email Address
                   </p>
-                  <p className="font-medium">info@countysupermarket.co.ke</p>
+                  <p className="font-medium text-sm sm:text-base break-all">
+                    info@countysupermarket.co.ke
+                  </p>
                 </div>
               </div>
 
               {/* Phone */}
-              <div className="flex items-center gap-4">
-                <div className="w-12 h-12 flex items-center justify-center rounded-full bg-orange-500 text-white">
-                  <FaPhoneAlt />
+              <div className="flex items-start sm:items-center gap-4">
+                <div className="w-11 h-11 sm:w-12 sm:h-12 flex items-center justify-center rounded-full bg-blue-950 text-white shrink-0">
+                  <FaPhoneAlt className="text-lg" />
                 </div>
                 <div>
-                  <p className="text-orange-500 font-semibold text-sm">
+                  <p className="text-orange-400 font-semibold text-xs sm:text-sm">
                     Call Us
                   </p>
-                  <p className="font-medium text-blue-600">0726 692210</p>
+                  <p className="font-medium text-sm sm:text-base text-orange-100">
+                    0726 692210
+                  </p>
                 </div>
               </div>
             </div>
@@ -137,17 +144,20 @@ export default function Contact() {
 
           {/* Social Media */}
           <div>
-            <div className="flex items-center gap-3 mb-4">
+            <div className="flex items-center gap-3 mb-6">
               <span className="w-[3px] h-6 bg-orange-500" />
-              <h3 className="font-bold text-lg">SOCIAL MEDIA</h3>
+              <h3 className="font-bold text-base sm:text-lg tracking-wide">
+                SOCIAL MEDIA
+              </h3>
             </div>
 
-            <div className="flex gap-4">
+            <div className="flex flex-wrap gap-4">
               {[FaFacebookF, FaTwitter, FaInstagram].map((Icon, idx) => (
                 <a
                   key={idx}
                   href="#"
-                  className="w-10 h-10 flex items-center justify-center rounded-full bg-white shadow hover:bg-orange-500 hover:text-white transition"
+                  aria-label="Social Media"
+                  className="w-10 h-10 flex items-center justify-center rounded-full bg-white text-blue-900 shadow-sm hover:bg-orange-500 hover:text-white transition-all duration-300"
                 >
                   <Icon />
                 </a>

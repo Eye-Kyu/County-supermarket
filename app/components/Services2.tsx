@@ -7,8 +7,8 @@ export default function Services2() {
         {/* HERO ROW */}
         <div className="flex flex-col md:flex-row items-center gap-6">
           {/* LEFT TITLE */}
-          <div className="w-full md:w-1/2">
-            <h1 className="text-4xl sm:text-5xl md:text-7xl font-serif tracking-wide leading-tight">
+          <div className="w-full md:w-1/2 ">
+            <h1 className="text-4xl sm:text-4xl md:text-7xl font-serif tracking-wide leading-tight text-center md:text-left">
               EXPLORE <br /> OUR <br /> AISLES
             </h1>
           </div>

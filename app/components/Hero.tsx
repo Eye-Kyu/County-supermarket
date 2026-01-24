@@ -96,7 +96,7 @@ export default function HeroSlider() {
   return (
     <section
       ref={sectionRef}
-      className="relative h-screen w-full overflow-hidden"
+      className="relative h-screen w-full overflow-hidden "
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}
@@ -124,22 +124,22 @@ export default function HeroSlider() {
       {/* Static Content */}
       <div className="relative z-10 flex h-full items-center justify-center px-4 text-center">
         <div className="max-w-3xl text-white">
-          <h1 className="text-3xl sm:text-4xl md:text-6xl font-bold mb-4">
+          <h1 className="text-3xl sm:text-4xl md:text-6xl mb-4">
             Your Local Shopping Destination
           </h1>
 
-          <h2 className="text-base sm:text-lg md:text-2xl mb-8 opacity-90">
+          <h2 className="text-base sm:text-lg md:text-lg mb-8 opacity-90">
             Discover a wide range of goods and gourmet delights ata County
             Supermarket, it&#39;s where exceptional service and affordability
             meet.
           </h2>
 
-          <Link
+          {/*   <Link
             href="/contact"
             className="inline-block rounded-xl bg-blue-600 px-6 py-3 md:px-2 md:py-2 sm:px-8 sm:py-4 text-base sm:text-lg font-semibold hover:bg-blue-700 transition"
           >
             Contact Us
-          </Link>
+          </Link>*/}
         </div>
       </div>
 

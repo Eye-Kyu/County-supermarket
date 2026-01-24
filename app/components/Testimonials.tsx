@@ -22,7 +22,7 @@ export default function ClientTestimonials() {
     <section className="py-20 px-6 md:px-16 bg-white">
       <div className="max-w-7xl mx-auto">
         {/* Heading */}
-        <h2 className="text-center text-3xl md:text-4xl font-bold text-[#0b1b3f] mb-16">
+        <h2 className="text-center text-3xl md:text-4xl font-bold text-blue-950 mb-16">
           Client Testimonials
         </h2>
 

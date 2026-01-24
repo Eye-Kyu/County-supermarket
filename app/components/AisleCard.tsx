@@ -25,7 +25,9 @@ export default function AisleCard({
       {/* TEXT CARD */}
       <div className="w-full md:w-1/2 bg-[#23265e] rounded-3xl p-6 md:p-10 flex flex-col justify-center min-h-55">
         <h3 className="font-serif text-2xl mb-4 text-white">{title}</h3>
-        <p className="text-base leading-relaxed text-white">{text}</p>
+        <p className="text-sm md:text-base leading-relaxed text-white">
+          {text}
+        </p>
       </div>
 
       {/* IMAGE CARD */}
