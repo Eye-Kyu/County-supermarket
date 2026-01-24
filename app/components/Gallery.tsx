@@ -45,7 +45,7 @@ export default function Gallery() {
       {/* Heading */}
       <div className="text-center mb-16">
         <h2 className="text-3xl md:text-5xl font-extrabold tracking-wide">
-          WALK WITH US
+          SEE OUR HOME
         </h2>
 
         <div className="flex items-center justify-center gap-4 mb-4">

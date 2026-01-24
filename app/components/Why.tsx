@@ -9,7 +9,7 @@ const features = [
     color: "text-green-600",
   },
   {
-    title: "Convenient",
+    title: "Accessibility",
     description:
       "We prioritize convenience by offering a wide range of products under one roof, ensuring a seamless and efficient shopping experience.",
     icon: Send,

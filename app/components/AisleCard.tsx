@@ -17,7 +17,7 @@ export default function AisleCard({
 }: AisleCardProps) {
   return (
     <div
-      className={`w-full flex gap-3 h-[70vh] flex-col md:flex-row ${
+      className={`w-full flex gap-2 h-[70vh] flex-col md:flex-row ${
         reverse ? "md:flex-row-reverse" : ""
       } ${className}`}
     >
