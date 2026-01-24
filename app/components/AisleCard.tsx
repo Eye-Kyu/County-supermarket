@@ -20,10 +20,10 @@ export default function AisleCard({
       className={`w-full flex flex-col md:flex-row gap-4 ${
         reverse ? "md:flex-row-reverse" : ""
       } ${className}`}
-      style={{ minHeight: "60vh" }}
+      style={{ minHeight: "70vh" }}
     >
       {/* TEXT CARD */}
-      <div className="w-full md:w-1/2 bg-blue-950 rounded-3xl p-6 md:p-10 flex flex-col justify-center min-h-55">
+      <div className="w-full md:w-1/2 bg-blue-950 rounded-xl p-6 md:p-10 flex flex-col justify-center min-h-55">
         <h3 className="font-serif text-2xl mb-4 text-white">{title}</h3>
         <p className="text-sm md:text-base leading-relaxed text-white">
           {text}
@@ -32,7 +32,7 @@ export default function AisleCard({
 
       {/* IMAGE CARD */}
       <div
-        className="w-full md:w-1/2 relative rounded-3xl overflow-hidden
+        className="w-full md:w-1/2 relative rounded-xl overflow-hidden
                    min-h-55 sm:min-h-75 md:min-h-full"
       >
         <Image

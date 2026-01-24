@@ -24,7 +24,7 @@ export default function Navbar() {
   return (
     <nav className="sticky top-0 z-50 bg-white/80 backdrop-blur border-b border-gray-200 shadow-sm">
       <div className="max-w-7xl mx-auto px-4">
-        <div className="flex h-[70px] pb-3 items-center justify-between">
+        <div className="flex h-17.5 pb-3 items-center justify-between">
           {/* Logo */}
           <Link href="/" className="flex items-center">
             <Image
@@ -37,7 +37,7 @@ export default function Navbar() {
           </Link>
 
           {/* Desktop Menu */}
-          <div className="hidden md:flex space-x-14 text-sm px-4 py-6">
+          <div className="hidden md:flex space-x-14 text-sm text-black px-4 py-6">
             {links.map((link) => (
               <Link
                 key={link.name}
