@@ -7,6 +7,8 @@ type LoyaltyStatCardProps = {
   suffix?: string;
   label: string;
   description: string;
+  primaryButton: string;
+  secondaryButton?: string;
 };
 
 export default function LoyaltyStatCard({

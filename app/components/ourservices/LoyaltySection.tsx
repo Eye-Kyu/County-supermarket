@@ -66,7 +66,7 @@ export default function LoyaltySection({
             suffix="+"
             label="Happy Customers"
             description="Our growing community of loyal shoppers continues to inspire us to deliver quality products, great prices, and excellent service every day at County Supermarket."
-           {/*  primaryButton="Join Our Rewards"*/}
+            primaryButton="Join Our Rewards"
             secondaryButton="Learn More"
           />
         </div>
