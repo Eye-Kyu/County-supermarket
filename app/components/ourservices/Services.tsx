@@ -1,3 +1,5 @@
+"use client";
+
 import Image from "next/image";
 
 type Service = {
@@ -8,98 +10,98 @@ type Service = {
 
 const services: Service[] = [
   {
-    title: "Grocery",
+    title: "Kukuriko",
     description:
-      "Browse through the assortment of fresh fruits and vegetables sourced locally. Get locally grown and farm-fresh produce ready to nourish your family.",
-    image: "/Images/groceries.webp",
+      "Savor the flavors of our Chicken Restaurant, where we serve delicious and perfectly cooked chicken dishes." +
+      "From crispy fried chicken to tender grilled options, our menu offers a variety of mouthwatering choices to satisfy your cravings." +
+      "Experience the irresistible taste of our chicken dishes, made with quality ingredients and cooked to perfection for a truly satisfying dining experience.",
+    image: "/Images/Services/kukuriko.webp",
   },
   {
-    title: "Bakery",
+    title: "Delivery Service",
     description:
-      "Enjoy a delectable selection of pastries, bread, and baked goods freshly made each day. Whether it's a special celebration or just a treat for yourself, our bakery delights are sure to please your taste buds.",
-    image: "/Images/Hero/hero1.webp",
+      "Enjoy the convenience of our delivery service, bringing your favorite items right to your doorstep." +
+      "With our reliable and efficient delivery service, you can shop from the comfort of your home and have your groceries delivered to you in no time." +
+      "Experience the ease and convenience of shopping with us through our delivery service.",
+    image: "/Images/Services/delivery.webp",
   },
   {
-    title: "Butchery",
+    title: "Whatsapp Shopping",
     description:
-      "Visit our Butchery for premium meats expertly prepared. With a focus on quality and freshness, our butchery offers a wide range of cuts, poultry, and seafood to meet all your culinary needs.",
-    image: "/Images/Butchery.webp",
+      "Order your favorite items through our WhatsApp shopping service." +
+      "Simply send us a message with your order details, and our team will take care of the rest." +
+      "Experience the ease and convenience of shopping with us through WhatsApp.",
+    image: "/Images/Services/whatsapp.webp",
   },
   {
-    title: "Household Essentials",
+    title: "Exhauster Services",
     description:
-      "Find all your household needs in one place. From cleaning supplies and personal care products to kitchen essentials, our shelves are stocked to keep your home running smoothly.",
-    image: "/Images/Hero/Groceries2.webp",
-  },
-  {
-    title: "Fashion",
-    description:
-      "Explore our fashion section for trendy, affordable, and high-quality clothing for the whole family. From casual wear to special occasions, we offer styles that suit every need.",
-    image: "/Images/clothing.webp",
-  },
-  {
-    title: "Electronics",
-    description:
-      "Discover a variety of quality electronics at County Supermarket. From home appliances and gadgets to accessories, our electronics section offers reliable products at affordable prices.",
-    image: "/Images/electronics.webp",
+      "County Supermarket offers waste management services designed to efficiently handle waste removal." +
+      "Our exhauster services ensure a clean and hygienic environment for customers and the community.",
+    image: "/Images/Services/exhauster.webp",
   },
   {
     title: "Parking",
     description:
-      "Enjoy hassle-free shopping with our spacious and secure parking facilities. Designed for your convenience, we ensure easy access and peace of mind during your visit.",
-    image: "/Images/clothing.webp",
+      "Enjoy hassle-free shopping with our spacious and secure parking facilities." +
+      "Our parking lot is designed to accommodate a large number of vehicles.",
+    image: "/Images/Services/parking.webp",
   },
   {
     title: "Customer Service",
     description:
-      "At County Supermarket, your satisfaction is our priority. Our friendly and professional customer service team is always ready to assist you with any inquiries, ensuring a smooth shopping experience.",
-    image: "/Images/Hero/Groceries.webp",
+      "Our friendly customer service team ensures a smooth shopping experience." +
+      "Whether you have questions, need assistance, or want to provide feedback, we're here to help.",
+    image: "/Images/Customer-Care.jpg",
   },
 ];
 
-export default function ServicesZigZag() {
+export default function ServicesSection() {
   return (
-    <section className="bg-white py-24 z-50 w-screen">
-      <div className="mx-auto max-w-6xl px-6">
-        <div className="flex flex-col gap-20">
-          {services.map((service, index) => {
-            const isReversed = index % 2 !== 0;
+    <section className="w-screen bg-white py-20">
+      <div className="mx-auto max-w-6xl px-6 flex flex-col gap-32">
+        {services.map((service, index) => {
+          const isReversed = index % 2 !== 0;
 
-            return (
-              <div
-                key={service.title}
-                className={`flex flex-col items-center gap-8 md:flex-row ${
-                  isReversed ? "md:flex-row-reverse" : ""
-                }`}
-              >
-                {/* Image */}
-                <div className="w-full md:w-3/5">
-                  <div className="relative aspect-square w-full overflow-hidden rounded-sm">
+          return (
+            <div key={service.title} className="flex flex-col gap-6">
+              {/* Title */}
+              <div>
+                <h2 className="text-xl md:text-3xl font-semibold uppercase tracking-wide text-blue-950">
+                  {service.title}
+                </h2>
+                <div className="mt-2 h-0.5 w-16 bg-orange-500" />
+              </div>
+
+              {/* Card */}
+              <div className="rounded-2xl p-8 md:p-8 min-h-[50vh] flex items-center">
+                <div
+                  className={`grid md:grid-cols-5 gap-10 items-center w-full ${
+                    isReversed ? "md:[&>*:first-child]:order-2" : ""
+                  }`}
+                >
+                  {/* Image */}
+                  <div className="relative w-full md:col-span-3 aspect-[4/3] rounded-xl overflow-hidden shadow-2xl">
                     <Image
                       src={service.image}
                       alt={service.title}
                       fill
                       className="object-cover"
+                      sizes="(max-width:768px) 100vw, 60vw"
                     />
                   </div>
-                </div>
 
-                {/* Text */}
-                <div className="w-full md:w-2/5">
-                  <h2 className="mb-3 text-lg font-semibold md:font-medium md:text-2xl uppercase tracking-wide text-blue-950">
-                    {service.title}
-                  </h2>
-
-                  <div className="mb-4 h-0.5 w-12 bg-orange-500" />
-
-                  <p className="text-sm leading-relaxed text-black">
-                    {service.description}
-                  </p>
+                  {/* Text */}
+                  <div className="md:col-span-2">
+                    <p className="text-sm md:text-base leading-relaxed text-black">
+                      {service.description}
+                    </p>
+                  </div>
                 </div>
               </div>
-            );
-          })}
-        </div>
+            </div>
+          );
+        })}
       </div>
     </section>
   );
