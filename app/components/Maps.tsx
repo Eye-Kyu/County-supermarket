@@ -5,32 +5,39 @@ import { useState } from "react";
 type Location = {
   label: string;
   query: string;
+  hours: string;
 };
 
 const locations: Location[] = [
   {
     label: "County Supermarket Head Office - Kenol, Murang'a",
     query: "County Supermarket Kenol Murang'a Kenya",
+    hours: "Mon – Sat: 7:00 AM – 9:00 PM  |  Sun: 8:00 AM – 8:00 PM",
   },
   {
     label: "County Supermarket Juja Branch - Kenyatta Road, Kiambu",
     query: "County Supermarket Juja Kenyatta Road Kiambu Kenya",
+    hours: "Mon – Sat: 8:00 AM – 9:00 PM  |  Sun: 9:00 AM – 8:00 PM",
   },
   {
     label: "County Supermarket Kabati Branch - Kabati, Murang'a",
     query: "County Supermarket Kabati Murang'a Kenya",
+    hours: "Mon – Sat: 7:00 AM – 8:30 PM  |  Sun: 8:00 AM – 7:30 PM",
   },
   {
     label: "County Supermarket Kagio Branch - Kagio, Kirinyaga",
     query: "County Supermarket Kagio Kirinyaga Kenya",
+    hours: "Mon – Sat: 7:00 AM – 9:00 PM  |  Sun: 8:00 AM – 8:00 PM",
   },
   {
     label: "County Supermarket Kagumo Branch - Kagumo, Kirinyaga",
     query: "County Supermarket Kagumo Kirinyaga Kenya",
+    hours: "Mon – Sat: 7:30 AM – 8:30 PM  |  Sun: 8:30 AM – 7:00 PM",
   },
   {
     label: "County Supermarket Kahawa West Branch - Nairobi",
     query: "County Supermarket Kahawa West Nairobi Kenya",
+    hours: "Mon – Sat: 8:00 AM – 10:00 PM  |  Sun: 9:00 AM – 9:00 PM",
   },
 ];
 
@@ -80,6 +87,10 @@ export default function Maps() {
                   <div className="flex flex-col gap-1">
                     <span className="text-sm sm:text-base font-medium">
                       {location.label}
+                    </span>
+
+                    <span className="text-xs text-gray-500">
+                      🕐 {location.hours}
                     </span>
 
                     {isActive && (

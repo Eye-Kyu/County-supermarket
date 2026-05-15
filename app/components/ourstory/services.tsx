@@ -23,21 +23,21 @@ const services: Service[] = [
     title: "County Deli",
     description:
       "Enjoy ready-to-eat meals, snacks, and freshly prepared dishes perfect for a quick and delicious bite.",
-    image: "/Images/deli.jpg",
+    image: "/Images/Improved/Kukuriko.jpg",
     icon: Sandwich,
   },
   {
     title: "County Bakery",
     description:
       "Freshly baked bread, cakes, pastries, and other bakery treats prepared daily for our customers.",
-    image: "/Images/bakery.jpg",
+    image: "/Images/Improved/Bakery.jpg",
     icon: Croissant,
   },
   {
     title: "County Electronics",
     description:
       "Browse a selection of home electronics, appliances, and everyday tech essentials.",
-    image: "/Images/electronics.webp",
+    image: "/Images/Improved/Electronics.jpg",
     icon: Tv,
   },
   {
@@ -51,7 +51,7 @@ const services: Service[] = [
     title: "County Grocery",
     description:
       "A wide selection of groceries, pantry essentials, and household products for your everyday needs.",
-    image: "/Images/groceries.webp",
+    image: "/Images/Improved/Groceries3.jpg",
     icon: ShoppingCart,
   },
   {
@@ -72,7 +72,7 @@ const services: Service[] = [
     title: "County Liquor",
     description:
       "A variety of soft drinks, juices, and other beverages to complement your shopping experience.",
-    image: "/Images/beverages.jpg",
+    image: "/Images/Improved/Liquor.jpg",
     icon: Coffee,
   },
 ];

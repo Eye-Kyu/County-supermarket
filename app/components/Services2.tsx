@@ -18,7 +18,7 @@ export default function Services2() {
             <AisleCard
               title="BAKERY"
               text="We offer a variety of freshly baked goods, from bread and pastries to cakes and cookies, all made with high-quality ingredients to satisfy your cravings."
-              image="/Images/Hero/hero1.webp"
+              image="/Images/Improved/bakery2.jpg"
             />
           </div>
         </div>
@@ -29,7 +29,7 @@ export default function Services2() {
             <AisleCard
               title="ELECTRONICS"
               text="Whether you're looking for the latest gadgets or essential household electronics, our selection has something for everyone."
-              image="/Images/Hero/hero1.webp"
+              image="/Images/Improved/Electronics.jpg"
               reverse
             />
           </div>
@@ -38,7 +38,7 @@ export default function Services2() {
             <AisleCard
               title="GROCERIES"
               text="Fresh from local farms to international delights, our grocery aisle is stocked with everything you need for your kitchen and more."
-              image="/Images/Hero/Groceries.webp"
+              image="/Images/Improved/Groceries2.jpg"
               reverse
             />
           </div>
@@ -50,7 +50,7 @@ export default function Services2() {
             <AisleCard
               title="HOUSEHOLD ITEMS"
               text="From cleaning supplies to kitchen essentials, our household items aisle has everything you need to keep your home running smoothly."
-              image="/Images/Hero/hero1.webp"
+              image="/Images/Improved/aisle.jpg"
             />
           </div>
 

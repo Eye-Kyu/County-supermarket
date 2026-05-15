@@ -6,6 +6,7 @@ import Maps from "./components/Maps";
 import Contact from "./components/Contact";
 import Why from "./components/Why";
 import ClientTestimonials from "./components/Testimonials";
+import NewsletterStrip from "./components/NewsletterStrip";
 
 export default function Home() {
   return (
@@ -20,6 +21,7 @@ export default function Home() {
           <Gallery />
           <Contact />
           <Maps />
+          <NewsletterStrip />
         </div>
       </main>
     </div>

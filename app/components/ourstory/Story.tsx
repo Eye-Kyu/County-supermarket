@@ -8,7 +8,7 @@ export default function OurStory() {
         <div className="flex flex-col gap-6 sm:gap-8">
           <div className="relative w-full h-[260px] sm:h-[320px] md:h-[380px] lg:h-[420px] rounded-md overflow-hidden">
             <Image
-              src="/Images/Hero/hero2.webp"
+              src="/Images/Hero/hero.jpg"
               alt="County Supermarket exterior"
               fill
               priority

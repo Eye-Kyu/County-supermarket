@@ -24,7 +24,7 @@ export default function Mission() {
         {/* MIDDLE: Store image */}
         <div className="relative h-105 md:h-130 w-full">
           <Image
-            src="/Images/Hero/Groceries.webp"
+            src="/Images/Hero/Hero2.jpg"
             alt="County Supermarket aisle"
             fill
             className="object-cover rounded-lg"
@@ -35,7 +35,7 @@ export default function Mission() {
         {/* RIGHT: Poster / graphic */}
         <div className="relative h-[420px] md:h-[520px] w-full">
           <Image
-            src="/Images/Hero/hero1.webp"
+            src="/Images/Improved/Halal.jpg"
             alt="County Supermarket poster"
             fill
             className="object-contain"

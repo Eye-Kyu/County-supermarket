@@ -7,6 +7,7 @@ import {
   FaTwitter,
   FaInstagram,
 } from "react-icons/fa";
+import Button from "./Button";
 
 export default function Contact() {
   return (
@@ -90,12 +91,7 @@ export default function Contact() {
           </div>
 
           {/* Button */}
-          <button
-            type="submit"
-            className="bg-blue-950 hover:bg-blue-900 text-white px-6 py-3 rounded-xl font-semibold transition"
-          >
-            Submit Form
-          </button>
+          <Button type="submit">Submit Form</Button>
         </form>
 
         {/* CONTACT INFO */}

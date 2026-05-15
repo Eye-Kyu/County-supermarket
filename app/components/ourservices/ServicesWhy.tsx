@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Button from "../Button";
 
 export default function WhyShopWithUs() {
   return (
@@ -24,9 +25,7 @@ export default function WhyShopWithUs() {
             exceptional customer service, ensuring every visit meets your needs.
             Shop with us for value and satisfaction!
           </p>
-          <button className="px-6 py-3 font-bold border-b border-black text-orange-500 transition-all duration-300 hover:bg-orange-500 hover:text-white hover:rounded-lg hover:border-b-0">
-            Contact Us
-          </button>
+          <Button variant="outline" href="/Contact">Contact Us</Button>
         </div>
 
         {/* MIDDLE: Store image */}

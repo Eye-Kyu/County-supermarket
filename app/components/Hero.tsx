@@ -5,10 +5,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 const slides = [
-  "/Images/Hero/hero1.webp",
-  "/Images/Hero/hero2.webp",
-  "/Images/Hero/Groceries.webp",
+  "/Images/Hero/hero.jpg",
+  "/Images/Hero/hero2.jpg",
   "/Images/Hero/Groceries2.webp",
+  "/Images/Improved/Groceries3.jpg",
 ];
 
 const INTERVAL = 5000;

@@ -14,7 +14,7 @@ export default function Services() {
       <div className="bg-white z-10 relative">
         <ServiceSection />
         <WhyShopWithUs />
-        <PageService />
+        {/* <PageService /> */}
         <Loyalty />
       </div>
     </div>

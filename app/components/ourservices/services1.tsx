@@ -39,12 +39,6 @@ const services: Service[] = [
     description:
       "Order your favorite products directly through WhatsApp and have them delivered to your doorstep.",
   },
-  {
-    image: "/Images/Services/exhauster.webp",
-    title: "Exhauster Services",
-    description:
-      "Our exhauster services provide efficient waste management solutions ensuring a clean and hygienic environment.",
-  },
 ];
 
 export default function ServiceSection() {

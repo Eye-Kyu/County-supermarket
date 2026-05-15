@@ -2,11 +2,12 @@
 
 import { useEffect, useState } from "react";
 import Image from "next/image";
+import Button from "./Button";
 
 const AboutMbisha = [
   { src: "/Images/Hero/Groceries2.webp", alt: "About Mbisha" },
-  { src: "/Images/Hero/Groceries.webp", alt: "About Mbisha" },
-  { src: "/Images/Hero/hero2.webp", alt: "About Mbisha" },
+  { src: "/Images/Hero/hero2.jpg", alt: "About Mbisha" },
+  { src: "/Images/Hero/hero.jpg", alt: "About Mbisha" },
 ];
 
 export default function About() {
@@ -66,9 +67,7 @@ export default function About() {
           customers find everything they need conveniently under one roof.
         </p>
 
-        <button className="px-6 py-3 font-bold border-b border-black text-orange-500 transition-all duration-300 hover:bg-orange-500 hover:text-white hover:rounded-lg hover:border-b-0">
-          Our Story
-        </button>
+        <Button variant="outline" href="/Story">Our Story</Button>
       </div>
     </div>
   );
