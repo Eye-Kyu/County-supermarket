@@ -23,12 +23,10 @@ export default function About() {
   }, []);
 
   return (
-    <div className="min-h-screen w-full flex flex-col md:flex-row">
+    <div className="w-full flex flex-col md:flex-row">
       {/* IMAGE SLIDER */}
       <div
-        className="relative w-full md:w-1/2 
-                   min-h-[260px] sm:min-h-[320px] md:min-h-screen
-                   overflow-hidden"
+        className="relative w-full md:w-1/2 min-h-64 sm:min-h-80 md:min-h-130 overflow-hidden"
       >
         {AboutMbisha.map((img, index) => (
           <div

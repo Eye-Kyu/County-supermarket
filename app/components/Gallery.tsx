@@ -39,7 +39,7 @@ export default function Gallery() {
   const prev = () => setIndex((i) => (i <= 0 ? maxIndex : i - 1));
 
   return (
-    <section className="min-h-screen pt-14 flex flex-col justify-center">
+    <section className="py-16 sm:py-20 lg:py-24">
       {/* Heading */}
       <div className="text-center mb-12 space-y-6">
         <h2 className="text-center text-3xl md:text-4xl font-bold text-blue-950">

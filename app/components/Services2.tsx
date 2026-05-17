@@ -18,7 +18,7 @@ export default function Services2() {
             <AisleCard
               title="BAKERY"
               text="We offer a variety of freshly baked goods, from bread and pastries to cakes and cookies, all made with high-quality ingredients to satisfy your cravings."
-              image="/Images/Improved/bakery2.jpg"
+              image="/Images/Improved/bakery3.jpg"
             />
           </div>
         </div>

@@ -5,10 +5,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 const slides = [
-  "/Images/Hero/hero.jpg",
+  "/Images/Improved/kroadbranch.jpg",
   "/Images/Hero/hero2.jpg",
   "/Images/Hero/Groceries2.webp",
-  "/Images/Improved/Groceries3.jpg",
+  "/Images/Improved/Kukuriko2.jpg",
 ];
 
 const INTERVAL = 5000;
@@ -129,9 +129,8 @@ export default function HeroSlider() {
           </h1>
 
           <h2 className="text-base sm:text-lg md:text-lg mb-8 opacity-90">
-            Discover a wide range of goods and gourmet delights ata County
-            Supermarket, it&#39;s where exceptional service and affordability
-            meet.
+            Discover a wide range of goods and gourmet delights at County
+            Supermarket — where exceptional service and affordability meet.
           </h2>
 
           {/*   <Link

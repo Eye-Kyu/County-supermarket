@@ -11,9 +11,9 @@ import Button from "./Button";
 
 export default function Contact() {
   return (
-    <section className="w-full py-20 px-6 md:px-16 bg-gray-200 ">
+    <section className="w-full py-12 sm:py-16 md:py-20 px-4 sm:px-6 md:px-16 bg-gray-200">
       {/* Header */}
-      <div className="text-center mb-16">
+      <div className="text-center mb-8 sm:mb-12">
         <div className="flex items-center justify-center gap-4 mb-4">
           <span className="w-6 h-[2px] bg-orange-500" />
           <p className="uppercase tracking-widest text-sm font-semibold">
@@ -22,7 +22,7 @@ export default function Contact() {
           <span className="w-6 h-[2px] bg-orange-500" />
         </div>
 
-        <h2 className="text-center text-3xl md:text-4xl font-bold text-blue-950 mb-16">
+        <h2 className="text-center text-3xl md:text-4xl font-bold text-blue-950">
           LET&apos;S GET IN TOUCH
         </h2>
       </div>

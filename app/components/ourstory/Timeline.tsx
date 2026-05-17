@@ -1,66 +1,83 @@
-const Chronology = [
+const milestones = [
   {
-    year: "1990",
+    year: "2009",
+    title: "Where It All Began",
     event:
-      "Opened our first store in a small town. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi vel consectetur interdum, nisl nisi consectetur nisi. lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi vel consectetur interdum, nisl nisi consectetur nisi.",
+      "County Supermarket opened its first doors in Kenol, Murang'a — a modest store with a clear purpose: to serve the local community with quality goods at honest prices. From day one, the warmth of the team and the breadth of the shelves set us apart.",
   },
   {
-    year: "2005",
+    year: "2013",
+    title: "Growing Into Kirinyaga",
     event:
-      "Opened our second store in Kaggio region further expanding our reach. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi vel consectetur interdum, nisl nisi consectetur nisi. lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi vel consectetur interdum, nisl nisi consectetur nisi.",
+      "We expanded to Kagio in Kirinyaga County, marking our first step beyond Murang'a. The community welcomed us with open arms, and we responded by bringing the same dedication to service and affordability that defined our founding branch.",
   },
   {
-    year: "2010",
+    year: "2016",
+    title: "Strengthening Our Roots",
     event:
-      "Opened our third store in the city center, offering a wider range of products. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi vel consectetur interdum, nisl nisi consectetur nisi. lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi vel consectetur interdum, nisl nisi consectetur nisi.",
-  },
-  {
-    year: "2015",
-    event:
-      "Opened our fourth store in the suburbs, providing convenient access for our customers. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi vel consectetur interdum, nisl nisi consectetur nisi. lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi vel consectetur interdum, nisl nisi consectetur nisi.",
+      "A third branch opened in Kabati, Murang'a, deepening our presence in central Kenya. With three branches now operating, County Supermarket was cementing its reputation as the go-to shopping destination for families across the region.",
   },
   {
     year: "2020",
+    title: "Resilience & Expansion",
     event:
-      "Opened our fifth store in the downtown area, catering to a diverse customer base. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi vel consectetur interdum, nisl nisi consectetur nisi. lorem ipsum dolor sit amet, consectetur adipiscing elit. Pellentesque euismod, nisi vel consectetur interdum, nisl nisi consectetur nisi.",
+      "The Kagumo branch in Kirinyaga opened, reaffirming our commitment to growth and community service. At six branches and counting, County Supermarket stands as a homegrown Kenyan success story built on trust, value, and family.",
+  },
+  {
+    year: "2025",
+    title: "Reaching Greater Nairobi",
+    event:
+      "The Juja branch launched along Kenyatta Road in Kiambu County, extending County Supermarket's reach into the greater Nairobi metropolitan area and serving a fast-growing urban customer base.",
   },
 ];
 
 export default function Timeline() {
   return (
-    <section className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 md:px-10 bg-white">
-      <div className="max-w-4xl mx-auto space-y-10">
+    <section className="py-16 sm:py-20 lg:py-24 px-4 sm:px-6 md:px-10 bg-gray-50">
+      <div className="max-w-4xl mx-auto">
         {/* Heading */}
-        <div className="text-center">
-          <h1 className="text-2xl sm:text-3xl md:text-4xl font-bold py-3 px-6 md:px-0 bg-orange-500 text-white rounded-md">
+        <div className="mb-10 sm:mb-14">
+          <p className="text-xs font-semibold uppercase tracking-widest text-orange-500 mb-3">
+            Our History
+          </p>
+          <h2 className="text-3xl sm:text-4xl font-bold text-blue-950 mb-4">
             Our Timeline
-          </h1>
-        </div>
-
-        {/* Intro */}
-        <div className="text-center max-w-2xl mx-auto">
-          <p className="text-gray-700 text-sm sm:text-base md:text-lg leading-relaxed">
-            Our journey began in 1990 when we opened our first store in a small
-            town. Over the years, we expanded to multiple locations and
-            continued to provide quality products and services to our customers.
+          </h2>
+          <div className="w-12 h-1 bg-orange-500 mb-5" />
+          <p className="text-gray-600 text-sm sm:text-base max-w-2xl leading-relaxed">
+            From a single store in Kenol to six branches across central Kenya —
+            here is the journey that made County Supermarket a household name.
           </p>
         </div>
 
-        {/* Timeline */}
-        <div className="space-y-8 sm:space-y-10">
-          {Chronology.map((item, index) => (
-            <div key={index} className="space-y-3 text-left">
-              {/* Year */}
-              <div className="font-bold text-lg sm:text-xl text-orange-300">
-                {item.year}
-              </div>
+        {/* Timeline entries */}
+        <div className="relative">
+          {/* Vertical line */}
+          <div className="absolute left-5 sm:left-6 top-0 bottom-0 w-px bg-gray-200" />
 
-              {/* Event */}
-              <div className="text-gray-700 text-sm sm:text-base leading-relaxed">
-                {item.event}
+          <div className="space-y-10 sm:space-y-12">
+            {milestones.map((item, index) => (
+              <div key={index} className="relative flex gap-6 sm:gap-8">
+                {/* Year badge */}
+                <div className="shrink-0 w-10 sm:w-12 flex flex-col items-center">
+                  <div className="w-3 h-3 rounded-full bg-orange-500 ring-4 ring-orange-100 mt-1 z-10" />
+                </div>
+
+                {/* Content */}
+                <div className="pb-2">
+                  <span className="inline-block text-xs font-bold uppercase tracking-widest text-orange-500 mb-1">
+                    {item.year}
+                  </span>
+                  <h3 className="text-base sm:text-lg font-bold text-blue-950 mb-2">
+                    {item.title}
+                  </h3>
+                  <p className="text-gray-600 text-sm sm:text-base leading-relaxed">
+                    {item.event}
+                  </p>
+                </div>
               </div>
-            </div>
-          ))}
+            ))}
+          </div>
         </div>
       </div>
     </section>

@@ -16,45 +16,39 @@ export default function LoyaltyStatCard({
   suffix = "+",
   label,
   description,
+  primaryButton,
+  secondaryButton,
 }: LoyaltyStatCardProps) {
   return (
-    <div
-      className="
-      relative
-      rounded-2xl
-      p-10
-      text-center
-      backdrop-blur-xl
-      bg-white/40
-      border border-white/30
-      shadow-xl
-      flex flex-col justify-center
-      transition
-      hover:scale-[1.02]
-      "
-    >
-      {/* subtle gradient highlight */}
-      <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-white/20 to-transparent pointer-events-none"></div>
+    <div className="relative rounded-2xl p-6 sm:p-10 text-center backdrop-blur-xl bg-white border border-gray-100 shadow-xl flex flex-col justify-center transition hover:scale-[1.02]">
+      {/* Subtle gradient highlight */}
+      <div className="absolute inset-0 rounded-2xl bg-gradient-to-br from-white/20 to-transparent pointer-events-none" />
 
       <div className="relative z-10">
-        <h3 className="text-4xl font-bold text-orange-500">
+        <h3 className="text-4xl sm:text-5xl font-extrabold text-blue-950">
           <AnimatedCounter value={value} suffix={suffix} />
         </h3>
 
-        <p className="text-gray-700 text-sm mt-1">{label}</p>
+        <p className="text-gray-500 text-sm mt-2 uppercase tracking-widest font-medium">
+          {label}
+        </p>
 
-        <p className="text-gray-700 mt-6 leading-relaxed max-w-sm mx-auto">
+        <div className="w-10 h-0.5 bg-orange-500 mx-auto my-5" />
+
+        <p className="text-gray-600 leading-relaxed max-w-sm mx-auto text-sm sm:text-base">
           {description}
         </p>
 
         <div className="flex justify-center gap-4 mt-8 flex-wrap">
-          <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2 rounded-full text-sm font-medium transition">
-            Join Our Rewards
+          <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2.5 rounded-full text-sm font-semibold transition">
+            {primaryButton}
           </button>
 
-          <button className="border border-blue-950 text-blue-950 px-6 py-2 rounded-full text-sm font-medium hover:bg-green-50 transition">
-            Learn More
-          </button>
+          {secondaryButton && (
+            <button className="border border-blue-950 text-blue-950 px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-blue-950 hover:text-white transition">
+              {secondaryButton}
+            </button>
+          )}
         </div>
       </div>
     </div>

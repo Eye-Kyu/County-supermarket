@@ -20,7 +20,7 @@ export default function AisleCard({
       className={`w-full flex flex-col md:flex-row gap-4 ${
         reverse ? "md:flex-row-reverse" : ""
       } ${className}`}
-      style={{ minHeight: "70vh" }}
+      style={{ minHeight: "clamp(320px, 55vh, 600px)" }}
     >
       {/* TEXT CARD */}
       <div className="w-full md:w-1/2 bg-blue-950 rounded-xl p-6 md:p-10 flex flex-col justify-center min-h-55">
