@@ -5,10 +5,10 @@ import Image from "next/image";
 import Link from "next/link";
 
 const slides = [
-  "/Images/Improved/kroadbranch.jpg",
-  "/Images/Hero/hero2.jpg",
-  "/Images/Hero/Groceries2.webp",
-  "/Images/Improved/Kukuriko2.jpg",
+  "/Images/Hero/hero.webp",
+  "/Images/Hero/hero2.webp",
+  "/Images/Hero/Hero4.webp",
+  "/Images/Improved/Kukuriko-logo.webp",
 ];
 
 const INTERVAL = 5000;
@@ -96,7 +96,7 @@ export default function HeroSlider() {
   return (
     <section
       ref={sectionRef}
-      className="relative h-screen w-full overflow-hidden "
+      className="relative h-dvh w-full overflow-hidden"
       onTouchStart={handleTouchStart}
       onTouchMove={handleTouchMove}
       onTouchEnd={handleTouchEnd}

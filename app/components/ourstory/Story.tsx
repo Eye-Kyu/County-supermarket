@@ -88,7 +88,7 @@ export default function OurStory() {
             className="relative w-full h-70 sm:h-90 md:h-110 rounded-2xl overflow-hidden shadow-lg"
           >
             <Image
-              src="/Images/Improved/kroadbranch.jpg"
+              src="/Images/Hero/Hero4.webp"
               alt="County Supermarket exterior"
               fill
               priority
@@ -103,7 +103,7 @@ export default function OurStory() {
             className="absolute -bottom-8 right-0 w-2/3 h-[160px] sm:h-[200px] rounded-2xl overflow-hidden shadow-2xl border-4 border-white"
           >
             <Image
-              src="/Images/Improved/Groceries2.jpg"
+              src="/Images/Hero/Kroad3.webp"
               alt="Inside County Supermarket"
               fill
               className="object-cover"

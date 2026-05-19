@@ -16,25 +16,25 @@ const services: Service[] = [
       "Our loyalty program rewards regular shoppers with exclusive discounts, points-based rewards, and special offers both in-store and online.",
   },
   {
-    image: "/Images/Services/kukuriko.webp",
+    image: "/Images/Improved/Kukuriko-logo.webp",
     title: "Kukuriko",
     description:
       "Get the best chicken dishes in town with our delicious and affordable options, freshly prepared every day.",
   },
   {
-    image: "/Images/Services/delivery.webp",
+    image: "/Images/Services/Delivery.webp",
     title: "County Delivery",
     description:
       "Our delivery service ensures groceries and household essentials reach your home safely and on time.",
   },
   {
-    image: "/Images/Services/return_policy.webp",
+    image: "/Images/Services/Returns.webp",
     title: "Easy Returns",
     description:
       "Our hassle-free return policy ensures your satisfaction with every purchase, no questions asked.",
   },
   {
-    image: "/Images/Services/whatsapp.webp",
+    image: "/Images/Services/Whatsapp.webp",
     title: "WhatsApp Shopping",
     description:
       "Order your favourite products directly through WhatsApp and have them delivered straight to your doorstep.",

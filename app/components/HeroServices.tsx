@@ -5,7 +5,7 @@ export default function HeroServices() {
     <section className="relative h-[45vh] sm:h-[50vh] md:h-[55vh] lg:h-[60vh] w-full overflow-hidden">
       {/* Background Image */}
       <Image
-        src="/Images/groceries.webp"
+        src="/Images/Services/Returns.webp"
         alt="Our Services"
         fill
         priority

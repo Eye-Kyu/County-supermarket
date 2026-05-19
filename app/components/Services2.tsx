@@ -50,7 +50,7 @@ export default function Services2() {
             <AisleCard
               title="HOUSEHOLD ITEMS"
               text="From cleaning supplies to kitchen essentials, our household items aisle has everything you need to keep your home running smoothly."
-              image="/Images/Improved/aisle.jpg"
+              image="/Images/Improved/Household3.jpg"
             />
           </div>
 

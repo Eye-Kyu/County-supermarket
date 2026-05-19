@@ -5,9 +5,9 @@ import Image from "next/image";
 import Button from "./Button";
 
 const AboutMbisha = [
-  { src: "/Images/Hero/Groceries2.webp", alt: "About Mbisha" },
-  { src: "/Images/Hero/hero2.jpg", alt: "About Mbisha" },
-  { src: "/Images/Hero/hero.jpg", alt: "About Mbisha" },
+  { src: "/Images/Hero/Hero4.webp", alt: "County Supermarket Kenol Branch" },
+  { src: "/Images/Hero/hero2.webp", alt: "About Mbisha" },
+  { src: "/Images/Hero/hero.webp", alt: "About Mbisha" },
 ];
 
 export default function About() {
@@ -25,9 +25,7 @@ export default function About() {
   return (
     <div className="w-full flex flex-col md:flex-row">
       {/* IMAGE SLIDER */}
-      <div
-        className="relative w-full md:w-1/2 min-h-64 sm:min-h-80 md:min-h-130 overflow-hidden"
-      >
+      <div className="relative w-full md:w-1/2 min-h-64 sm:min-h-80 md:min-h-130 overflow-hidden">
         {AboutMbisha.map((img, index) => (
           <div
             key={index}
@@ -65,7 +63,9 @@ export default function About() {
           customers find everything they need conveniently under one roof.
         </p>
 
-        <Button variant="outline" href="/Story">Our Story</Button>
+        <Button variant="outline" href="/Story">
+          Our Story
+        </Button>
       </div>
     </div>
   );
