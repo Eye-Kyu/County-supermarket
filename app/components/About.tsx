@@ -49,7 +49,9 @@ export default function About() {
 
       {/* TEXT CONTENT */}
       <div className="w-full md:w-1/2 flex flex-col justify-center items-start p-6 md:p-12 animate-fadeIn">
-        <h2 className="text-3xl md:text-5xl italic font-bold mb-8">County Ni Home</h2>
+        <h2 className="text-4xl md:text-5xl italic font-bold mb-8">
+          County Ni Home
+        </h2>
 
         <p className="text-sm md:text-base font-light max-w-xl mb-6">
           County Supermarket is a beloved local Kenyan chain with a presence in
