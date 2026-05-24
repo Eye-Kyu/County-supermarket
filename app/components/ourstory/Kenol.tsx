@@ -64,8 +64,8 @@ export default function Kenol() {
           </h2>
           <div className="w-12 h-1 bg-orange-500 mb-4" />
           <h3 className="text-base sm:text-lg text-gray-500 font-medium mb-6">
-            Twenty-five years in Kenol — and we still know our oldest customers
-            by name.
+            Twenty-five years in Kenol and we still know our oldest customers by
+            name.
           </h3>
           <p className="text-gray-600 leading-relaxed text-sm sm:text-base mb-4">
             When we first set up in Kenol around the year 2000, the market was
@@ -73,7 +73,7 @@ export default function Kenol() {
             plots were unbuilt. The spot where County Supermarket Kenol stands
             today was a sawmill. In those early gas-pump days, we&apos;d
             sometimes wait a full month for a customer to even ask the price of
-            a cylinder — not buy one, just ask.
+            a cylinder, not buy one, just ask.
           </p>
           <p className="text-gray-600 leading-relaxed text-sm sm:text-base mb-6">
             Twenty-five years later, Kenol is a 24-hour economy. Banks,

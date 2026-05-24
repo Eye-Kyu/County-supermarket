@@ -49,15 +49,14 @@ export default function Closing() {
             If there is one thing County would say to anyone watching from the
             outside, thinking they don&apos;t have the schooling or the training
             or the right kind of start — it is this: try anyway. Some of these
-            skills aren&apos;t taught. They&apos;re given. Some of them you
-            only ever learn by walking into the room and figuring it out as you
-            go.
+            skills aren&apos;t taught. They&apos;re given. Some of them you only
+            ever learn by walking into the room and figuring it out as you go.
           </p>
           <p className="text-gray-600 leading-relaxed text-sm sm:text-base mb-8">
             Business is a process of failing, getting up, and trying again. The
             dynamics keep shifting. The market keeps moving. Embrace that. The
             people who make it aren&apos;t always the ones with the cleanest
-            plan — they&apos;re the ones who refused to stop because they
+            plan: they&apos;re the ones who refused to stop because they
             didn&apos;t have one.
           </p>
           <blockquote className="border-l-4 border-orange-500 pl-5 py-2 my-6">

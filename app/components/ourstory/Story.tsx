@@ -89,7 +89,7 @@ export default function OurStory() {
 
         {/* RIGHT — text content */}
         <div ref={contentRef} className="pt-10 lg:pt-0">
-          <p className="text-xs font-semibold uppercase tracking-widest text-orange-500 mb-3">
+          <p className="text-xs font-semibold italic uppercase tracking-widest text-orange-500 mb-3">
             County Ni Home
           </p>
 
@@ -103,7 +103,7 @@ export default function OurStory() {
             It started small. A kerosene pump. A roadside fuel stop. A minimart
             squeezed into the corner of a petrol station nobody expected much
             from. Eighteen years later, the same business has grown into six
-            branches across central Kenya — built on one stubborn idea: that
+            branches across central Kenya, built on one stubborn idea: that
             quality shopping shouldn&apos;t only belong to big cities. This is
             how County grew up.
           </p>

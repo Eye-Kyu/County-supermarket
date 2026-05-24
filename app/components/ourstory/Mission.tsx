@@ -2,7 +2,7 @@ const cards = [
   {
     tag: "Our Mission",
     heading: "Bringing quality home, every day.",
-    body: "At County Supermarket, our mission is to provide every Kenyan family with access to fresh, quality products at honest prices. Across all six of our branches we are committed to delivering a seamless and welcoming shopping experience — where convenience, variety, and exceptional service come together under one roof. We exist to make your life easier, your kitchen fuller, and your household happier.",
+    body: "At County Supermarket, our mission is to provide every Kenyan family with access to fresh, quality products at honest prices. Across all six of our branches we are committed to delivering a seamless and welcoming shopping experience, where convenience, variety, and exceptional service come together under one roof. We exist to make your life easier, your kitchen fuller, and your household happier.",
     bg: "bg-orange-500",
     tagColor: "text-orange-100",
     rule: "bg-white/40",
@@ -10,7 +10,7 @@ const cards = [
   {
     tag: "Our Vision",
     heading: "Kenya's most trusted local supermarket.",
-    body: "We envision County Supermarket as Kenya's leading community-rooted retail chain — a brand that every family recognises, trusts, and calls home. Our vision is to expand our footprint across the country while preserving the warmth and personal touch that defines us. We strive to set the standard for local retail: putting Kenyan families first, empowering local suppliers, and growing as a cornerstone of the communities we serve.",
+    body: "We envision County Supermarket as Kenya's leading community-rooted retail chain. A brand that every family recognises, trusts, and calls home. Our vision is to expand our footprint across the country while preserving the warmth and personal touch that defines us. We strive to set the standard for local retail: putting Kenyan families first, empowering local suppliers, and growing as a cornerstone of the communities we serve.",
     bg: "bg-blue-950",
     tagColor: "text-blue-300",
     rule: "bg-white/20",

@@ -3,13 +3,13 @@ const milestones = [
     year: "~2001",
     title: "Arrival in Kenol",
     event:
-      "We set up shop in Kenol, Murang'a — selling gas in a sleepy junction town where donkeys filled the market and customers a month apart wasn't unusual. The waiting began.",
+      "We set up shop in Kenol, Murang'a , selling gas in a sleepy junction town where donkeys filled the market and customers a month apart wasn't unusual. The waiting began.",
   },
   {
     year: "Mid-2000s",
     title: "Magomano Petrol Station",
     event:
-      "A full forecourt takes shape — fuel pumps, a restaurant, a car wash, a service bay. A small minimart is added in the corner, almost as an afterthought. We had no idea what it would become.",
+      "A full forecourt takes shape: fuel pumps, a restaurant, a car wash, a service bay. A small minimart is added in the corner, almost as an afterthought. We had no idea what it would become.",
   },
   {
     year: "~2008",
@@ -21,29 +21,35 @@ const milestones = [
     year: "~2011",
     title: "County Is Born",
     event:
-      "Makomano Minimart becomes County Supermarket — a name built to travel, christened the same year Kenya's county system is taking shape. Strategy meets serendipity.",
+      "Magomano Minimart becomes County Supermarket : a name built to travel, christened the same year Kenya's county system is taking shape. Strategy meets serendipity.",
   },
   {
     year: "2013",
     title: "Kagio Branch Opens",
     event:
-      "We expand into Kirinyaga County. Kagio welcomes us, and we respond with the same standards that built the first branch — quality, affordability, and time for the customer.",
+      "We expand into Kirinyaga County. Kagio welcomes us, and we respond with the same standards that built the first branch, quality, affordability, and time for the customer.",
   },
   {
     year: "2016",
     title: "Kabati Branch Opens",
     event:
-      "A third location, this time back in Murang'a. Three branches and counting — County is becoming a familiar name across central Kenya.",
+      "A third location, this time back in Murang'a. Three branches and counting, County is becoming a familiar name across central Kenya.",
   },
   {
     year: "2020",
     title: "Kagumo Branch Opens",
     event:
-      "A fourth branch arrives in Kirinyaga even as the country navigates a difficult year. Growth through the headwinds — a sign of what the next chapter would demand.",
+      "A fourth branch arrives in Kirinyaga even as the country navigates a difficult year. Growth through the headwinds, a sign of what the next chapter would demand.",
+  },
+  {
+    year: "2023",
+    title: "Kahawa West Branch - Nairobi County",
+    event:
+      "County crosses into Nairobi County for the first time. Kahawa West is different from anywhere we'd been before, a residential estate, not a highway junction. The customer here isn't passing through; they live here. We came to be the shop at the end of their street.",
   },
   {
     year: "2025",
-    title: "Juja Branch — Greater Nairobi",
+    title: "Juja Branch - Greater Nairobi",
     event:
       "We launch on Kenyatta Road in Kiambu County, stepping into the greater Nairobi metropolitan area. Six branches. Four counties. Still the same shop in spirit as the one in the petrol station corner.",
   },
@@ -75,9 +81,9 @@ export default function Timeline() {
           </h2>
           <div className="w-12 h-1 bg-orange-500 mb-5" />
           <p className="text-gray-600 text-sm sm:text-base max-w-2xl leading-relaxed">
-            From a kerosene pump in Kenol to six branches across central Kenya
-            — the full journey that made County Supermarket what it is today.
-            Dates marked with ~ are approximate and await client confirmation.
+            From a kerosene pump in Kenol to six branches across central Kenya.
+            Each milestone is a chapter in the full journey that made County
+            Supermarket what it is today.
           </p>
         </div>
 

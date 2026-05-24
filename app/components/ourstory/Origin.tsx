@@ -54,7 +54,7 @@ export default function Origin() {
           </h3>
           <p className="text-gray-600 leading-relaxed text-sm sm:text-base mb-4">
             Before there was County, there was Magomano. A petrol station with
-            everything a busy junction needs — a small restaurant, a car wash, a
+            everything a busy junction needs: a small restaurant, a car wash, a
             service bay, and tucked into a modest corner, a convenience shop.
             The minimart wasn&apos;t the headline; it was the afterthought. A
             small space, almost an experiment, mimicking what the bigger

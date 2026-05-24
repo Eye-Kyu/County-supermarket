@@ -40,7 +40,7 @@ export default function Heart() {
           </h2>
           <div className="w-12 h-1 bg-orange-400 mb-4 mx-auto" />
           <h3 className="text-base sm:text-lg text-white/70 font-medium mb-8">
-            Why we do what we do — quietly, and without counting.
+            Why we do what we do. Quietly, and without counting.
           </h3>
           <p className="text-white/80 leading-relaxed text-sm sm:text-base mb-4">
             Long before there was a supermarket, there was a prayer. The promise
@@ -49,16 +49,16 @@ export default function Heart() {
             has shaped everything that came after.
           </p>
           <p className="text-white/80 leading-relaxed text-sm sm:text-base mb-8">
-            Over the years, County has put students through school — not one or
+            Over the years, County has put students through school, not one or
             two, but more than anyone has bothered to count. We don&apos;t bring
             cameras when we do this work. We don&apos;t keep ledgers of names.
-            We help, and we move on. As the business grows, so does the scope
-            of what we want to give back.
+            We help, and we move on. As the business grows, so does the scope of
+            what we want to give back.
           </p>
           <blockquote className="border-t border-b border-orange-400/40 py-8 my-8">
             <p className="text-white text-lg sm:text-xl italic leading-relaxed font-medium">
-              &ldquo;I don&apos;t carry my camera when I&apos;m going to do
-              CSR. That is something we do out of our hearts.&rdquo;
+              &ldquo;I don&apos;t carry my camera when I&apos;m going to do CSR.
+              That is something we do out of our hearts.&rdquo;
             </p>
           </blockquote>
         </div>

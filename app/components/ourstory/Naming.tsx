@@ -64,20 +64,21 @@ export default function Naming() {
           </h2>
           <div className="w-12 h-1 bg-orange-500 mb-4" />
           <h3 className="text-base sm:text-lg text-gray-500 font-medium mb-6">
-            Why &lsquo;Makomano Minimart&rsquo; had to become something bigger.
+            Why &lsquo;Magomano Minimart&rsquo; had to become something bigger.
           </h3>
           <p className="text-gray-600 leading-relaxed text-sm sm:text-base mb-4">
-            The original name — Makomano Minimart — was tied to a place. And a
-            brand tied to a place can only grow so far. As the shop outgrew its
-            corner, the name had to grow too. We wanted something that could
-            travel — a name that wouldn&apos;t feel out of place in any town in
-            Kenya.
+            The original name{" "}
+            <span className="font-bold italic">Magomano Minimart</span> was tied
+            to a place. And a brand tied to a place can only grow so far. As the
+            shop outgrew its corner, the name had to grow too. We wanted
+            something that could travel, a name that wouldn&apos;t feel out of
+            place in any town in Kenya.
           </p>
           <p className="text-gray-600 leading-relaxed text-sm sm:text-base mb-6">
             The choice arrived with its own timing. The year County was
             christened was the same year Kenya was preparing to roll out its new
             county system. A name that suggested local pride, national reach,
-            and a country in the middle of reorganising itself — all at once.
+            and a country in the middle of reorganising itself , all at once.
             Strategy met serendipity.
           </p>
           <blockquote className="border-l-4 border-orange-500 pl-5 py-2 my-6">
