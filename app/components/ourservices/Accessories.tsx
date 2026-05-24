@@ -1,7 +1,12 @@
 "use client";
 
+import { useEffect, useRef } from "react";
 import Image from "next/image";
+import { gsap } from "gsap";
+import { ScrollTrigger } from "gsap/ScrollTrigger";
 import { Footprints, ShoppingBag, Luggage, Watch } from "lucide-react";
+
+gsap.registerPlugin(ScrollTrigger);
 
 type Category = {
   icon: React.ElementType;
@@ -33,19 +38,48 @@ const categories: Category[] = [
 ];
 
 export default function Accessories() {
+  const sectionRef = useRef<HTMLElement>(null);
+  const imgWrapRef = useRef<HTMLDivElement>(null);
+
+  useEffect(() => {
+    const ctx = gsap.context(() => {
+      gsap.fromTo(
+        imgWrapRef.current,
+        { yPercent: -10 },
+        {
+          yPercent: 10,
+          ease: "none",
+          scrollTrigger: {
+            trigger: sectionRef.current,
+            start: "top bottom",
+            end: "bottom top",
+            scrub: true,
+          },
+        }
+      );
+    }, sectionRef);
+
+    return () => ctx.revert();
+  }, []);
+
   return (
-    <section className="relative overflow-hidden py-10 sm:py-14 px-4 sm:px-6 md:px-12 lg:px-16">
-      {/* Background image */}
-      <Image
-        src="/Images/clothing.webp"
-        alt=""
-        fill
-        className="object-cover object-center"
-        sizes="100vw"
-        aria-hidden="true"
-      />
-      {/* Dark overlay */}
-      <div className="absolute inset-0 bg-blue-950/75" />
+    <section
+      ref={sectionRef}
+      className="relative overflow-hidden py-10 sm:py-14 px-4 sm:px-6 md:px-12 lg:px-16"
+    >
+      {/* Background image — oversized so parallax travel never reveals edges */}
+      <div ref={imgWrapRef} className="absolute inset-[-15%]">
+        <Image
+          src="/Images/Services/Fashion.webp"
+          alt=""
+          fill
+          className="object-cover object-center"
+          sizes="100vw"
+          aria-hidden="true"
+        />
+      </div>
+      {/* Dark overlay — 65% opacity */}
+      <div className="absolute inset-0 bg-blue-950/65" />
 
       <div className="relative z-10 max-w-5xl mx-auto">
         {/* Header */}
