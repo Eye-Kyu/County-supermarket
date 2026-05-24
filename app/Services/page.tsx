@@ -5,6 +5,7 @@ import { gsap } from "gsap";
 import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import Hero from "../components/HeroServices";
+import Accessories from "../components/ourservices/Accessories";
 import WhyShopWithUs from "../components/ourservices/ServicesWhy";
 import Loyalty from "../components/ourservices/Loyalty";
 import ServiceSection from "../components/ourservices/services1";
@@ -47,6 +48,17 @@ export default function Services() {
       ease: "power2.out",
     });
 
+    // Accessory cards stagger on scroll
+    gsap.set(".accessory-card", { opacity: 0, y: 30 });
+    gsap.to(".accessory-card", {
+      scrollTrigger: { trigger: ".accessory-card", start: "top bottom" },
+      opacity: 1,
+      y: 0,
+      duration: 0.55,
+      stagger: 0.1,
+      ease: "power2.out",
+    });
+
     ScrollTrigger.refresh();
     return () => ScrollTrigger.getAll().forEach((t) => t.kill());
   }, []);
@@ -56,6 +68,7 @@ export default function Services() {
       <Hero />
       <div className="bg-white z-10 relative">
         <ServiceSection />
+        <Accessories />
         <WhyShopWithUs />
         <Loyalty />
       </div>

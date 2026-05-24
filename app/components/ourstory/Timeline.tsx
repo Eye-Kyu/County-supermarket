@@ -1,33 +1,63 @@
 const milestones = [
   {
-    year: "2009",
-    title: "Where It All Began",
+    year: "~2001",
+    title: "Arrival in Kenol",
     event:
-      "County Supermarket opened its first doors in Kenol, Murang'a — a modest store with a clear purpose: to serve the local community with quality goods at honest prices. From day one, the warmth of the team and the breadth of the shelves set us apart.",
+      "We set up shop in Kenol, Murang'a — selling gas in a sleepy junction town where donkeys filled the market and customers a month apart wasn't unusual. The waiting began.",
+  },
+  {
+    year: "Mid-2000s",
+    title: "Magomano Petrol Station",
+    event:
+      "A full forecourt takes shape — fuel pumps, a restaurant, a car wash, a service bay. A small minimart is added in the corner, almost as an afterthought. We had no idea what it would become.",
+  },
+  {
+    year: "~2008",
+    title: "The Minimart Outgrows Its Corner",
+    event:
+      "Two years in, the shop is outperforming the rest of the forecourt. A trip to Murang'a sparks the idea: tear down the service bay, build a real supermarket. The seed is planted.",
+  },
+  {
+    year: "~2011",
+    title: "County Is Born",
+    event:
+      "Makomano Minimart becomes County Supermarket — a name built to travel, christened the same year Kenya's county system is taking shape. Strategy meets serendipity.",
   },
   {
     year: "2013",
-    title: "Growing Into Kirinyaga",
+    title: "Kagio Branch Opens",
     event:
-      "We expanded to Kagio in Kirinyaga County, marking our first step beyond Murang'a. The community welcomed us with open arms, and we responded by bringing the same dedication to service and affordability that defined our founding branch.",
+      "We expand into Kirinyaga County. Kagio welcomes us, and we respond with the same standards that built the first branch — quality, affordability, and time for the customer.",
   },
   {
     year: "2016",
-    title: "Strengthening Our Roots",
+    title: "Kabati Branch Opens",
     event:
-      "A third branch opened in Kabati, Murang'a, deepening our presence in central Kenya. With three branches now operating, County Supermarket was cementing its reputation as the go-to shopping destination for families across the region.",
+      "A third location, this time back in Murang'a. Three branches and counting — County is becoming a familiar name across central Kenya.",
   },
   {
     year: "2020",
-    title: "Resilience & Expansion",
+    title: "Kagumo Branch Opens",
     event:
-      "The Kagumo branch in Kirinyaga opened, reaffirming our commitment to growth and community service. At six branches and counting, County Supermarket stands as a homegrown Kenyan success story built on trust, value, and family.",
+      "A fourth branch arrives in Kirinyaga even as the country navigates a difficult year. Growth through the headwinds — a sign of what the next chapter would demand.",
   },
   {
     year: "2025",
-    title: "Reaching Greater Nairobi",
+    title: "Juja Branch — Greater Nairobi",
     event:
-      "The Juja branch launched along Kenyatta Road in Kiambu County, extending County Supermarket's reach into the greater Nairobi metropolitan area and serving a fast-growing urban customer base.",
+      "We launch on Kenyatta Road in Kiambu County, stepping into the greater Nairobi metropolitan area. Six branches. Four counties. Still the same shop in spirit as the one in the petrol station corner.",
+  },
+  {
+    year: "2025",
+    title: "The Year of the Lesson",
+    event:
+      "A hard year teaches a strategic lesson: don't put all the eggs in one basket. The plan to diversify beyond supermarkets begins quietly.",
+  },
+  {
+    year: "2026",
+    title: "Eighteen Years Strong",
+    event:
+      "Eighteen years since the first minimart. Fifteen as County. Twenty-five years in Kenol. The next chapter is already being written.",
   },
 ];
 
@@ -45,8 +75,9 @@ export default function Timeline() {
           </h2>
           <div className="w-12 h-1 bg-orange-500 mb-5" />
           <p className="text-gray-600 text-sm sm:text-base max-w-2xl leading-relaxed">
-            From a single store in Kenol to six branches across central Kenya —
-            here is the journey that made County Supermarket a household name.
+            From a kerosene pump in Kenol to six branches across central Kenya
+            — the full journey that made County Supermarket what it is today.
+            Dates marked with ~ are approximate and await client confirmation.
           </p>
         </div>
 
