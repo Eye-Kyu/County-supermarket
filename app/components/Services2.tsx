@@ -54,13 +54,11 @@ export default function Services2() {
             />
           </div>
 
-          {/* Desktop only */}
-          <div className="hidden">
+          <div className="w-full md:w-1/2">
             <AisleCard
-              title="GROCERIES"
-              text="Fresh from local farms to international delights, our grocery aisle is stocked with everything you need for your kitchen and more."
-              image="/Images/Hero/Groceries.webp"
-              reverse
+              title="FASHION & ACCESSORIES"
+              text="From everyday footwear to statement bags — sneakers, heels, handbags, travel bags, belts, and more. Everything you need to complete the look, all under one roof."
+              image="/Images/Services/fashion.webp"
             />
           </div>
         </section>
