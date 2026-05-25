@@ -56,9 +56,21 @@ export default function Services2() {
 
           <div className="w-full md:w-1/2">
             <AisleCard
-              title="FASHION & ACCESSORIES"
-              text="From everyday footwear to statement bags — sneakers, heels, handbags, travel bags, belts, and more. Everything you need to complete the look, all under one roof."
+              title="BAGS & ACCESSORIES"
+              text="Handbags, travel bags, belts, hats, scarves, and jewellery — a curated range of accessories to complete every look, all in one place."
               image="/Images/Services/fashion.webp"
+            />
+          </div>
+        </section>
+
+        {/* ROW 4 */}
+        <section className="flex flex-col md:flex-row py-6 gap-6">
+          <div className="w-full md:w-1/2">
+            <AisleCard
+              title="FASHION & CLOTHES"
+              text="From everyday casuals to formal wear — our fashion aisle brings you a curated selection of clothing for men, women, and kids. Style for every occasion, at County prices."
+              image="/Images/clothing.webp"
+              reverse
             />
           </div>
         </section>
