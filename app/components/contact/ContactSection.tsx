@@ -95,7 +95,7 @@ export default function ContactSection() {
                 <input
                   type="text"
                   placeholder="First Name"
-                  className="w-full border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-1 focus:ring-yellow-500"
+                  className="w-full border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-1 focus:ring-orange-500"
                 />
               </div>
 
@@ -104,7 +104,7 @@ export default function ContactSection() {
                 <input
                   type="text"
                   placeholder="Last Name"
-                  className="w-full border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-1 focus:ring-yellow-500"
+                  className="w-full border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-1 focus:ring-orange-500"
                 />
               </div>
             </div>
@@ -116,7 +116,7 @@ export default function ContactSection() {
               <input
                 type="email"
                 placeholder="Email Address"
-                className="w-full border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-1 focus:ring-yellow-500"
+                className="w-full border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-1 focus:ring-orange-500"
               />
             </div>
 
@@ -125,7 +125,7 @@ export default function ContactSection() {
               <input
                 type="text"
                 placeholder="Subject"
-                className="w-full border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-1 focus:ring-yellow-500"
+                className="w-full border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-1 focus:ring-orange-500"
               />
             </div>
 
@@ -136,7 +136,7 @@ export default function ContactSection() {
               <textarea
                 rows={5}
                 placeholder="Your Message"
-                className="w-full border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-1 focus:ring-yellow-500"
+                className="w-full border border-gray-300 px-4 py-2 rounded-md focus:outline-none focus:ring-1 focus:ring-orange-500"
               />
             </div>
 
