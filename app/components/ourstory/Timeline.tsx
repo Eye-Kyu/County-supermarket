@@ -3,7 +3,7 @@ const milestones = [
     year: "~2001",
     title: "Arrival in Kenol",
     event:
-      "We set up shop in Kenol, Murang'a , selling gas in a sleepy junction town where donkeys filled the market and customers a month apart wasn't unusual. The waiting began.",
+      "We set up shop in Kenol, Murang'a , selling kerosene in a sleepy junction town where donkeys filled the market and customers a month apart wasn't unusual. The waiting began.",
   },
   {
     year: "Mid-2000s",

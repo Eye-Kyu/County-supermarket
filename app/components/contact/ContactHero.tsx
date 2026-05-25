@@ -5,7 +5,7 @@ export default function ContactHero() {
     <section className="relative h-[70vh] w-full overflow-hidden">
       {/* Background Image */}
       <Image
-        src="/Images/Customer-Care.jpg"
+        src="/Images/Customer.webp"
         alt="Contact Hero"
         fill
         priority
