@@ -1,7 +1,5 @@
 import {
   FaFacebookF,
-  FaTwitter,
-  FaInstagram,
   FaMapMarkerAlt,
   FaPhoneAlt,
   FaEnvelope,
@@ -35,8 +33,14 @@ export default function ContactSection() {
               </p>
 
               <div className="flex items-center gap-4 text-gray-600">
-                <FaFacebookF className="cursor-pointer hover:text-orange-500" />
-                <FaTwitter className="cursor-pointer hover:text-orange-500" />
+                <a
+                  href="https://www.facebook.com/CountySupermarket"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  aria-label="County Supermarket on Facebook"
+                >
+                  <FaFacebookF className="hover:text-orange-500 transition-colors" />
+                </a>
               </div>
             </div>
 
@@ -67,7 +71,7 @@ export default function ContactSection() {
                   </div>
                   <div>
                     <p className="font-semibold text-gray-800">Call Us</p>
-                    <p className="text-sm text-gray-500">0726 692210</p>
+                    <p className="text-sm text-gray-500">0722785022</p>
                   </div>
                 </div>
 

@@ -24,9 +24,11 @@ export default function AnnouncementBar() {
   return (
     <div className="relative bg-blue-950 text-white text-sm py-2.5 px-4 text-center">
       <p className="pr-8">
-        🎉 Our new <strong>Kahawa West</strong> branch is now open!{" "}
+        🎉 Our new <strong>Kenyatta Road</strong> branch is now open!{" "}
         <a
-          href="/#map"
+          href="https://maps.google.com/?q=County+Supermarket+Juja+Kenyatta+Road+Kiambu+Kenya"
+          target="_blank"
+          rel="noopener noreferrer"
           className="underline font-semibold hover:text-orange-300 transition-colors"
         >
           Find us on the map →

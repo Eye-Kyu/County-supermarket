@@ -1,12 +1,6 @@
 "use client";
 
-import {
-  FaEnvelope,
-  FaPhoneAlt,
-  FaFacebookF,
-  FaTwitter,
-  FaInstagram,
-} from "react-icons/fa";
+import { FaEnvelope, FaPhoneAlt, FaFacebookF } from "react-icons/fa";
 import Button from "./Button";
 
 export default function Contact() {
@@ -131,7 +125,7 @@ export default function Contact() {
                     Call Us
                   </p>
                   <p className="font-medium text-sm sm:text-base text-orange-100">
-                    0726 692210
+                    0722785022
                   </p>
                 </div>
               </div>
@@ -148,16 +142,15 @@ export default function Contact() {
             </div>
 
             <div className="flex flex-wrap gap-4">
-              {[FaFacebookF, FaTwitter, FaInstagram].map((Icon, idx) => (
-                <a
-                  key={idx}
-                  href="#"
-                  aria-label="Social Media"
-                  className="w-10 h-10 flex items-center justify-center rounded-full bg-white text-blue-900 shadow-sm hover:bg-orange-500 hover:text-white transition-all duration-300"
-                >
-                  <Icon />
-                </a>
-              ))}
+              <a
+                href="https://www.facebook.com/CountySupermarket"
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label="County Supermarket on Facebook"
+                className="w-10 h-10 flex items-center justify-center rounded-full bg-white text-blue-900 shadow-sm hover:bg-orange-500 hover:text-white transition-all duration-300"
+              >
+                <FaFacebookF />
+              </a>
             </div>
           </div>
         </div>
