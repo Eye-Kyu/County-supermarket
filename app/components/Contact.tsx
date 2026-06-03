@@ -147,9 +147,9 @@ export default function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="County Supermarket on Facebook"
-                className="w-10 h-10 flex items-center justify-center rounded-full bg-white text-blue-900 shadow-sm hover:bg-orange-500 hover:text-white transition-all duration-300"
+                className="inline-flex w-9 h-9 items-center justify-center rounded-full bg-blue-900 hover:bg-orange-500 transition-colors duration-200"
               >
-                <FaFacebookF />
+                <FaFacebookF size={14} />
               </a>
             </div>
           </div>

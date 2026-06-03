@@ -24,16 +24,16 @@ const milestones = [
       "Magomano Minimart becomes County Supermarket : a name built to travel, christened the same year Kenya's county system is taking shape. Strategy meets serendipity.",
   },
   {
-    year: "2013",
-    title: "Kagio Branch Opens",
-    event:
-      "We expand into Kirinyaga County. Kagio welcomes us, and we respond with the same standards that built the first branch, quality, affordability, and time for the customer.",
-  },
-  {
     year: "2016",
     title: "Kabati Branch Opens",
     event:
-      "A third location, this time back in Murang'a. Three branches and counting, County is becoming a familiar name across central Kenya.",
+      "A third location, back in Murang'a. Three branches and counting, County is becoming a familiar name across central Kenya.",
+  },
+  {
+    year: "2013",
+    title: "Kagio Branch Opens",
+    event:
+      "We expand into Kirinyaga County. Kagio welcomes us, and we respond with the same standards that built the first branch — quality, affordability, and time for the customer.",
   },
   {
     year: "2020",
