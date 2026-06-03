@@ -9,11 +9,11 @@ export default function Contact() {
       {/* Header */}
       <div className="text-center mb-8 sm:mb-12">
         <div className="flex items-center justify-center gap-4 mb-4">
-          <span className="w-6 h-[2px] bg-orange-500" />
+          <span className="w-6 h-0.5 bg-orange-500" />
           <p className="uppercase tracking-widest text-sm font-semibold">
             Talk To Us
           </p>
-          <span className="w-6 h-[2px] bg-orange-500" />
+          <span className="w-6 h-0.5 bg-orange-500" />
         </div>
 
         <h2 className="text-center text-3xl md:text-4xl font-bold text-blue-950">
@@ -26,7 +26,7 @@ export default function Contact() {
         {/* FORM */}
         <form className="lg:col-span-2 space-y-6">
           <div className="flex items-center gap-3">
-            <span className="w-[3px] h-6 bg-orange-500" />
+            <span className="w-0.75 h-6 bg-orange-500" />
             <h3 className="font-bold text-lg">MESSAGE</h3>
           </div>
 
@@ -92,12 +92,9 @@ export default function Contact() {
         <div className="bg-gray-400 py-8 px-4 sm:px-6 lg:px-8 rounded-lg space-y-10">
           {/* Contact Details */}
           <div>
-            <div className="flex items-center gap-3 mb-6">
-              <span className="w-[3px] h-6 bg-orange-500" />
-              <h3 className="font-bold text-base sm:text-lg tracking-wide">
-                OUR CONTACT
-              </h3>
-            </div>
+            <h3 className="font-bold text-base sm:text-lg tracking-wide mb-6">
+              OUR CONTACT
+            </h3>
 
             <div className="space-y-6">
               {/* Email */}
@@ -134,12 +131,9 @@ export default function Contact() {
 
           {/* Social Media */}
           <div>
-            <div className="flex items-center gap-3 mb-6">
-              <span className="w-[3px] h-6 bg-orange-500" />
-              <h3 className="font-bold text-base sm:text-lg tracking-wide">
-                SOCIAL MEDIA
-              </h3>
-            </div>
+            <h3 className="font-bold text-base sm:text-lg tracking-wide mb-6">
+              SOCIAL MEDIA
+            </h3>
 
             <div className="flex flex-wrap gap-4">
               <a
@@ -147,7 +141,7 @@ export default function Contact() {
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="County Supermarket on Facebook"
-                className="inline-flex w-9 h-9 items-center justify-center rounded-full bg-blue-900 hover:bg-orange-500 transition-colors duration-200"
+                className="inline-flex w-9 h-9 items-center justify-center rounded-full bg-blue-900 text-white hover:bg-orange-500 transition-colors duration-200"
               >
                 <FaFacebookF size={14} />
               </a>
