@@ -30,16 +30,16 @@ const milestones = [
       "A third location, back in Murang'a. Three branches and counting, County is becoming a familiar name across central Kenya.",
   },
   {
-    year: "2013",
-    title: "Kagio Branch Opens",
-    event:
-      "We expand into Kirinyaga County. Kagio welcomes us, and we respond with the same standards that built the first branch — quality, affordability, and time for the customer.",
-  },
-  {
     year: "2020",
     title: "Kagumo Branch Opens",
     event:
       "A fourth branch arrives in Kirinyaga even as the country navigates a difficult year. Growth through the headwinds, a sign of what the next chapter would demand.",
+  },
+  {
+    year: "2013",
+    title: "Kagio Branch Opens",
+    event:
+      "We expand into Kirinyaga County. Kagio welcomes us, and we respond with the same standards that built the first branch — quality, affordability, and time for the customer.",
   },
   {
     year: "2023",

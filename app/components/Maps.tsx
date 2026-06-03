@@ -20,14 +20,14 @@ const locations: Location[] = [
     hours: "Mon – Sat: 7:00 AM – 8:30 PM  |  Sun: 8:00 AM – 7:30 PM",
   },
   {
-    label: "County Supermarket Kagio Branch — Kagio, Kirinyaga",
-    query: "County Supermarket Kagio Kirinyaga Kenya",
-    hours: "Mon – Sat: 7:00 AM – 9:00 PM  |  Sun: 8:00 AM – 8:00 PM",
-  },
-  {
     label: "County Supermarket Kagumo Branch — Kagumo, Kirinyaga",
     query: "County Supermarket Kagumo Kirinyaga Kenya",
     hours: "Mon – Sat: 7:30 AM – 8:30 PM  |  Sun: 8:30 AM – 7:00 PM",
+  },
+  {
+    label: "County Supermarket Kagio Branch — Kagio, Kirinyaga",
+    query: "County Supermarket Kagio Kirinyaga Kenya",
+    hours: "Mon – Sat: 7:00 AM – 9:00 PM  |  Sun: 8:00 AM – 8:00 PM",
   },
   {
     label: "County Supermarket Kahawa West Branch — Nairobi",
