@@ -1,16 +1,15 @@
-"use client";
+﻿"use client";
 
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import Link from "next/link";
 
 const STORAGE_KEY = "county-cookies-v1";
 
 export default function CookieBanner() {
-  const [visible, setVisible] = useState(false);
-
-  useEffect(() => {
-    if (!localStorage.getItem(STORAGE_KEY)) setVisible(true);
-  }, []);
+  const [visible, setVisible] = useState(() => {
+    if (typeof window === "undefined") return false;
+    return !localStorage.getItem(STORAGE_KEY);
+  });
 
   const accept = () => {
     localStorage.setItem(STORAGE_KEY, "accepted");

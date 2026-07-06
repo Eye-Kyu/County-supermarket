@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 
@@ -10,34 +10,34 @@ type Location = {
 
 const locations: Location[] = [
   {
-    label: "County Supermarket Head Office — Kenol, Murang'a",
+    label: "County Supermarket Head Office - Kenol, Murang'a",
     query: "County Supermarket Kenol Murang'a Kenya",
-    hours: "Mon – Sat: 7:00 AM – 9:00 PM  |  Sun: 8:00 AM – 8:00 PM",
+    hours: "Mon - Sat: 7:00 AM - 9:00 PM  |  Sun: 8:00 AM - 8:00 PM",
   },
   {
-    label: "County Supermarket Kabati Branch — Kabati, Murang'a",
+    label: "County Supermarket Kabati Branch - Kabati, Murang'a",
     query: "County Supermarket Kabati Murang'a Kenya",
-    hours: "Mon – Sat: 7:00 AM – 8:30 PM  |  Sun: 8:00 AM – 7:30 PM",
+    hours: "Mon - Sat: 7:00 AM - 8:30 PM  |  Sun: 8:00 AM - 7:30 PM",
   },
   {
-    label: "County Supermarket Kagumo Branch — Kagumo, Kirinyaga",
+    label: "County Supermarket Kagumo Branch - Kagumo, Kirinyaga",
     query: "County Supermarket Kagumo Kirinyaga Kenya",
-    hours: "Mon – Sat: 7:30 AM – 8:30 PM  |  Sun: 8:30 AM – 7:00 PM",
+    hours: "Mon - Sat: 7:30 AM - 8:30 PM  |  Sun: 8:30 AM - 7:00 PM",
   },
   {
-    label: "County Supermarket Kagio Branch — Kagio, Kirinyaga",
+    label: "County Supermarket Kagio Branch - Kagio, Kirinyaga",
     query: "County Supermarket Kagio Kirinyaga Kenya",
-    hours: "Mon – Sat: 7:00 AM – 9:00 PM  |  Sun: 8:00 AM – 8:00 PM",
+    hours: "Mon - Sat: 7:00 AM - 9:00 PM  |  Sun: 8:00 AM - 8:00 PM",
   },
   {
-    label: "County Supermarket Kahawa West Branch — Nairobi",
+    label: "County Supermarket Kahawa West Branch - Nairobi",
     query: "County Supermarket Kahawa West Nairobi Kenya",
-    hours: "Mon – Sat: 8:00 AM – 10:00 PM  |  Sun: 9:00 AM – 9:00 PM",
+    hours: "Mon - Sat: 8:00 AM - 10:00 PM  |  Sun: 9:00 AM - 9:00 PM",
   },
   {
-    label: "County Supermarket Juja Branch — Kenyatta Road, Kiambu",
+    label: "County Supermarket Juja Branch - Kenyatta Road, Kiambu",
     query: "County Supermarket Juja Kenyatta Road Kiambu Kenya",
-    hours: "Mon – Sat: 8:00 AM – 10:00 PM  |  Sun: 9:00 AM – 9:00 PM",
+    hours: "Mon - Sat: 8:00 AM - 10:00 PM  |  Sun: 9:00 AM - 9:00 PM",
   },
 ];
 
@@ -59,7 +59,8 @@ export default function Maps() {
         </h2>
         <div className="w-12 h-1 bg-orange-500 mx-auto mb-4" />
         <p className="text-gray-600 text-sm max-w-md mx-auto">
-          Six branches across four counties — there's always a County near you.
+          Six branches across four counties â€” there&apos;s always a County
+          near you.
         </p>
       </div>
 
@@ -94,11 +95,11 @@ export default function Maps() {
                       {location.label}
                     </span>
                     <span className="text-xs text-gray-500">
-                      🕐 {location.hours}
+                      {location.hours}
                     </span>
                     {isActive && (
                       <span className="text-xs text-orange-500 font-semibold">
-                        Viewing on map →
+                        Viewing on map
                       </span>
                     )}
                   </div>

@@ -8,7 +8,6 @@ export default function Footer() {
       <div className="h-0.5 w-full bg-orange-400" />
 
       <div className="max-w-7xl mx-auto py-12 px-6 sm:px-12 grid grid-cols-2 lg:grid-cols-4 gap-10">
-
         {/* Brand */}
         <div className="col-span-2 lg:col-span-1">
           <Image
@@ -41,7 +40,10 @@ export default function Footer() {
               { href: "/Contact", label: "Contact" },
             ].map(({ href, label }) => (
               <li key={label}>
-                <Link href={href} className="hover:text-orange-400 transition-colors duration-200">
+                <Link
+                  href={href}
+                  className="hover:text-orange-400 transition-colors duration-200"
+                >
                   {label}
                 </Link>
               </li>
@@ -62,7 +64,10 @@ export default function Footer() {
               { href: "/Cookies", label: "Cookie Policy" },
             ].map(({ href, label }) => (
               <li key={label}>
-                <Link href={href} className="hover:text-orange-400 transition-colors duration-200">
+                <Link
+                  href={href}
+                  className="hover:text-orange-400 transition-colors duration-200"
+                >
                   {label}
                 </Link>
               </li>
@@ -92,7 +97,7 @@ export default function Footer() {
               href="mailto:info@countysupermarket.co.ke"
               className="text-sm hover:text-orange-400 transition-colors duration-200 break-all"
             >
-              info@countysupermarket.co.ke
+              info@countysupermarkets.co.ke
             </a>
           </div>
 
@@ -104,11 +109,29 @@ export default function Footer() {
       </div>
 
       <div className="border-t border-blue-900 py-5 px-6 flex flex-col sm:flex-row items-center justify-between gap-3 text-xs text-blue-200/40">
-        <span>&copy; {new Date().getFullYear()} County Supermarket. All rights reserved.</span>
+        <span>
+          &copy; {new Date().getFullYear()} County Supermarket. All rights
+          reserved.
+        </span>
         <div className="flex gap-4">
-          <Link href="/Terms" className="hover:text-orange-400 transition-colors">Terms</Link>
-          <Link href="/Cookies" className="hover:text-orange-400 transition-colors">Cookies</Link>
-          <Link href="/Careers" className="hover:text-orange-400 transition-colors">Careers</Link>
+          <Link
+            href="/Terms"
+            className="hover:text-orange-400 transition-colors"
+          >
+            Terms
+          </Link>
+          <Link
+            href="/Cookies"
+            className="hover:text-orange-400 transition-colors"
+          >
+            Cookies
+          </Link>
+          <Link
+            href="/Careers"
+            className="hover:text-orange-400 transition-colors"
+          >
+            Careers
+          </Link>
         </div>
       </div>
     </footer>

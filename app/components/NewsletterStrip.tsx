@@ -4,12 +4,54 @@ import { useState } from "react";
 
 export default function NewsletterStrip() {
   const [email, setEmail] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [statusMessage, setStatusMessage] = useState("");
   const [submitted, setSubmitted] = useState(false);
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
-    if (!email) return;
-    setSubmitted(true);
+
+    if (!email.trim()) return;
+
+    setLoading(true);
+    setStatusMessage("");
+
+    try {
+      const response = await fetch("/api/newsletter", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json",
+        },
+        body: JSON.stringify({
+          email: email.trim(),
+        }),
+      });
+
+      let data: { message?: string } = {};
+
+      try {
+        data = await response.json();
+      } catch {
+        // Ignore invalid JSON responses
+      }
+
+      if (!response.ok) {
+        setStatusMessage(data.message ?? "Unable to subscribe.");
+        return;
+      }
+
+      setSubmitted(true);
+      setEmail("");
+
+      setStatusMessage(
+        data.message ?? "You're on the list! Welcome to the County family.",
+      );
+    } catch (error) {
+      console.error("Newsletter Error:", error);
+      setStatusMessage("An unexpected error occurred. Please try again later.");
+    } finally {
+      setLoading(false);
+    }
   };
 
   return (
@@ -30,28 +72,39 @@ export default function NewsletterStrip() {
 
         {submitted ? (
           <p className="text-green-400 font-semibold text-lg py-3">
-            ✓ You&apos;re on the list! Welcome to the County family.
+            ✓ {statusMessage}
           </p>
         ) : (
-          <form
-            onSubmit={handleSubmit}
-            className="flex flex-col sm:flex-row gap-3 justify-center max-w-md mx-auto"
-          >
-            <input
-              type="email"
-              value={email}
-              onChange={(e) => setEmail(e.target.value)}
-              placeholder="Enter your email address"
-              required
-              className="flex-1 px-4 py-3 rounded-xl text-black focus:outline-none focus:ring-2 focus:ring-orange-400"
-            />
-            <button
-              type="submit"
-              className="bg-orange-500 hover:bg-orange-400 text-white font-semibold px-6 py-3 rounded-xl transition-colors whitespace-nowrap"
+          <>
+            <form
+              onSubmit={handleSubmit}
+              className="flex flex-col sm:flex-row gap-3 justify-center max-w-md mx-auto"
             >
-              Subscribe
-            </button>
-          </form>
+              <input
+                type="email"
+                value={email}
+                onChange={(e) => setEmail(e.target.value)}
+                placeholder="Enter your email address"
+                required
+                disabled={loading}
+                className="flex-1 px-4 py-3 rounded-xl text-black focus:outline-none focus:ring-2 focus:ring-orange-400 disabled:opacity-70"
+              />
+
+              <button
+                type="submit"
+                disabled={loading}
+                className="bg-orange-500 hover:bg-orange-400 disabled:bg-orange-300 disabled:cursor-not-allowed text-white font-semibold px-6 py-3 rounded-xl transition-colors whitespace-nowrap"
+              >
+                {loading ? "Subscribing..." : "Subscribe"}
+              </button>
+            </form>
+
+            {statusMessage && (
+              <p className="text-red-400 text-sm font-medium">
+                {statusMessage}
+              </p>
+            )}
+          </>
         )}
       </div>
     </section>
