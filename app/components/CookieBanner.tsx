@@ -3,16 +3,32 @@
 import { useState } from "react";
 import Link from "next/link";
 
-const STORAGE_KEY = "county-cookies-v1";
+const STORAGE_KEY = "county-cookie-preferences";
 
 export default function CookieBanner() {
   const [visible, setVisible] = useState(() => {
     if (typeof window === "undefined") return false;
+
     return !localStorage.getItem(STORAGE_KEY);
   });
 
-  const accept = () => {
-    localStorage.setItem(STORAGE_KEY, "accepted");
+  const saveConsent = (analytics: boolean) => {
+    localStorage.setItem(
+      STORAGE_KEY,
+      JSON.stringify({
+        necessary: true,
+        analytics,
+      }),
+    );
+
+    window.dispatchEvent(
+      new CustomEvent("cookie-consent", {
+        detail: {
+          analytics,
+        },
+      }),
+    );
+
     setVisible(false);
   };
 
@@ -20,26 +36,41 @@ export default function CookieBanner() {
 
   return (
     <div className="fixed bottom-0 left-0 right-0 z-50 p-4 sm:p-5">
-      <div className="max-w-4xl mx-auto bg-white/95 backdrop-blur border border-gray-200 rounded-2xl shadow-xl px-5 py-4 flex flex-col sm:flex-row items-start sm:items-center gap-4">
-        <div className="flex-1 min-w-0">
-          <p className="text-sm font-semibold text-blue-950 mb-0.5">We use cookies</p>
-          <p className="text-xs text-gray-500 leading-relaxed">
-            We use cookies to improve your experience and analyse site traffic.{" "}
-            <Link href="/Cookies" className="text-orange-500 underline hover:text-orange-600 transition-colors">
-              Learn more
-            </Link>
+      <div className="max-w-5xl mx-auto bg-white/95 backdrop-blur border border-gray-200 rounded-2xl shadow-xl p-5">
+        <div className="space-y-2">
+          <h2 className="text-sm font-semibold text-blue-950">
+            We use cookies
+          </h2>
+
+          <p className="text-sm text-gray-600 leading-relaxed">
+            We use essential cookies to keep the website working and analytics
+            cookies to understand how visitors use our website. You can change
+            your preferences at any time.
           </p>
-        </div>
-        <div className="flex gap-3 shrink-0">
+
           <Link
             href="/Cookies"
-            className="text-xs font-semibold text-gray-500 hover:text-blue-950 transition-colors px-4 py-2.5 rounded-xl border border-gray-200 hover:border-gray-300"
+            className="text-orange-500 hover:text-orange-600 underline text-sm"
           >
-            Manage
+            Learn more
           </Link>
+        </div>
+
+        <div className="mt-5 flex flex-wrap justify-end gap-3">
           <button
-            onClick={accept}
-            className="text-xs font-semibold bg-orange-500 hover:bg-orange-400 text-white px-5 py-2.5 rounded-xl transition-colors"
+            onClick={() => saveConsent(false)}
+            className="px-4 py-2 rounded-xl border border-gray-300 text-sm font-medium hover:bg-gray-100 transition"
+          >
+            Reject Non-Essential
+          </button>
+
+          <button className="px-4 py-2 rounded-xl border border-blue-950 text-blue-950 text-sm font-medium hover:bg-blue-50 transition">
+            Preferences
+          </button>
+
+          <button
+            onClick={() => saveConsent(true)}
+            className="px-5 py-2 rounded-xl bg-orange-500 hover:bg-orange-400 text-white text-sm font-semibold transition"
           >
             Accept All
           </button>

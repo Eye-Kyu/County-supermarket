@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import AnnouncementBar from "./components/AnnouncementBar";
 import CookieBanner from "./components/CookieBanner";
+import GoogleAnalyticsWrapper from "./components/GoogleAnalytics";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -132,6 +133,7 @@ export default function RootLayout({
         {children}
         <Footer />
         <CookieBanner />
+        <GoogleAnalyticsWrapper />
       </body>
     </html>
   );
