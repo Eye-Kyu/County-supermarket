@@ -336,7 +336,7 @@ export default function LoyaltyPage() {
                     onChange={(e) => setFullName(e.target.value)}
                     required
                     disabled={loading}
-                    className="w-full px-4 py-4 rounded-xl text-black focus:outline-none focus:ring-2 focus:ring-orange-400 disabled:opacity-60"
+                    className="w-full px-4 py-4 rounded-xl text-white focus:outline-none focus:ring-2 border border-orange-300 focus:ring-orange-400 disabled:opacity-60"
                   />
                 </div>
 
@@ -348,7 +348,7 @@ export default function LoyaltyPage() {
                     onChange={(e) => setPhone(e.target.value)}
                     required
                     disabled={loading}
-                    className="w-full px-4 py-4 rounded-xl text-black focus:outline-none focus:ring-2 focus:ring-orange-400 disabled:opacity-60"
+                    className="w-full px-4 py-4 rounded-xl text-white focus:outline-none focus:ring-2 border border-orange-300 focus:ring-orange-400 disabled:opacity-60"
                   />
                 </div>
 
@@ -360,7 +360,7 @@ export default function LoyaltyPage() {
                     onChange={(e) => setEmail(e.target.value)}
                     required
                     disabled={loading}
-                    className="w-full px-4 py-4 rounded-xl text-black focus:outline-none focus:ring-2 focus:ring-orange-400 disabled:opacity-60"
+                    className="w-full px-4 py-4 rounded-xl text-white focus:outline-none focus:ring-2 border border-orange-300 focus:ring-orange-400 disabled:opacity-60"
                   />
                 </div>
 
