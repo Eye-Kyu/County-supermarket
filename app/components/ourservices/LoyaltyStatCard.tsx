@@ -1,5 +1,6 @@
 "use client";
 
+import Link from "next/link";
 import AnimatedCounter from "./AnimatedCounter";
 
 type LoyaltyStatCardProps = {
@@ -8,7 +9,9 @@ type LoyaltyStatCardProps = {
   label: string;
   description: string;
   primaryButton: string;
+  primaryButtonHref?: string;
   secondaryButton?: string;
+  secondaryButtonHref?: string;
 };
 
 export default function LoyaltyStatCard({
@@ -17,7 +20,9 @@ export default function LoyaltyStatCard({
   label,
   description,
   primaryButton,
+  primaryButtonHref = "#",
   secondaryButton,
+  secondaryButtonHref = "#",
 }: LoyaltyStatCardProps) {
   return (
     <div className="relative rounded-2xl p-6 sm:p-10 text-center backdrop-blur-xl bg-white border border-gray-100 shadow-xl flex flex-col justify-center transition hover:scale-[1.02]">
@@ -40,14 +45,18 @@ export default function LoyaltyStatCard({
         </p>
 
         <div className="flex justify-center gap-4 mt-8 flex-wrap">
-          <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2.5 rounded-full text-sm font-semibold transition">
-            {primaryButton}
-          </button>
+          <Link href={primaryButtonHref}>
+            <button className="bg-orange-500 hover:bg-orange-600 text-white px-6 py-2.5 rounded-full text-sm font-semibold transition">
+              {primaryButton}
+            </button>
+          </Link>
 
           {secondaryButton && (
-            <button className="border border-blue-950 text-blue-950 px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-blue-950 hover:text-white transition">
-              {secondaryButton}
-            </button>
+            <Link href={secondaryButtonHref}>
+              <button className="border border-blue-950 text-blue-950 px-6 py-2.5 rounded-full text-sm font-semibold hover:bg-blue-950 hover:text-white transition">
+                {secondaryButton}
+              </button>
+            </Link>
           )}
         </div>
       </div>

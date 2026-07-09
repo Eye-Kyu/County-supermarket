@@ -14,6 +14,7 @@ export default function Navbar() {
     { name: "Our Story", href: "/Story" },
     { name: "Our Services", href: "/Services" },
     { name: "Loyalty", href: "/Loyalty" },
+    { name: "Careers", href: "/Careers" },
     { name: "Contact", href: "/Contact" },
   ];
 

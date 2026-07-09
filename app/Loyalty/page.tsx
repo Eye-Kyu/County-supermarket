@@ -1,21 +1,21 @@
 ﻿"use client";
 
 import { useState } from "react";
-import { Gift, Star, Truck, Tag, Cake, Zap } from "lucide-react";
+import { Gift, Star, Users, Tag, Award, Zap } from "lucide-react";
 
 const benefits = [
-  { icon: Tag, text: "5% off every shop above KES 2,000" },
-  { icon: Cake, text: "Double points during your birthday month" },
+  {
+    icon: Users,
+    text: "Join and become part of the County Supermarket family",
+  },
+  { icon: Award, text: "Earn loyalty points with every qualifying purchase" },
+  { icon: Tag, text: "Redeem your points for future discounts and rewards" },
   { icon: Zap, text: "Early access to weekly specials and flash sales" },
+  { icon: Gift, text: "Exclusive member-only offers and seasonal promotions" },
   {
-    icon: Truck,
-    text: "Reduced free-delivery threshold from KES 1,500 to KES 800",
+    icon: Star,
+    text: "Enjoy a rewarding shopping experience every time you visit",
   },
-  {
-    icon: Gift,
-    text: "Exclusive member-only gift bundles at Christmas and Easter",
-  },
-  { icon: Star, text: "Priority service at the deli and bakery counters" },
 ];
 
 const steps = [

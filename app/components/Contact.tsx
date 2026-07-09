@@ -176,9 +176,12 @@ export default function Contact() {
                     Email Address
                   </p>
 
-                  <p className="font-medium text-sm sm:text-base break-all">
+                  <a
+                    href="mailto:info@countysupermarkets.co.ke"
+                    className="font-medium text-sm sm:text-base break-all hover:text-orange-500 transition-colors duration-200"
+                  >
                     info@countysupermarkets.co.ke
-                  </p>
+                  </a>
                 </div>
               </div>
 
@@ -192,9 +195,12 @@ export default function Contact() {
                     Call Us
                   </p>
 
-                  <p className="font-medium text-sm sm:text-base text-orange-100">
+                  <a
+                    href="tel:+254722785022"
+                    className="font-medium text-sm sm:text-base text-orange-100 hover:text-orange-300 transition-colors duration-200"
+                  >
                     0722785022
-                  </p>
+                  </a>
                 </div>
               </div>
             </div>
