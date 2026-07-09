@@ -16,10 +16,11 @@ export default function Gallery() {
     "/Images/improved/Kukuriko.jpg",
     "/Images/improved/Kukuriko2.jpg",
     "/Images/Services/fashion.webp",
-    "/Images/improved/kroadbranch.jpg",
+    "/Images/Hero/Kroad-mobile.png",
     "/Images/clothing.webp",
     "/Images/improved/Household3.JPG",
     "/Images/improved/Furniture.JPG",
+    "/Images/Hero/County-mobile.png",
   ];
 
   const [index, setIndex] = useState(0);
