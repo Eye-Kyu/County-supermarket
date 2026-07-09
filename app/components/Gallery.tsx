@@ -17,7 +17,6 @@ export default function Gallery() {
     "/Images/improved/Kukuriko2.jpg",
     "/Images/Services/fashion.webp",
     "/Images/improved/kroadbranch.jpg",
-    "/Images/improved/Kids.jpg",
     "/Images/clothing.webp",
   ];
 
