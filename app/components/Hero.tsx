@@ -8,7 +8,7 @@ const desktopSlides = [
   "/Images/Hero/hero.webp",
   "/Images/Hero/hero2.webp",
   "/Images/Hero/Hero4.webp",
-  "/Images/Improved/Kukuriko-logo.webp",
+  "/Images/improved/Kukuriko-logo.webp",
 ];
 
 const mobileSlides = [

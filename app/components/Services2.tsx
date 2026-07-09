@@ -58,35 +58,35 @@ const departments: Department[] = [
     title: "County Household & Living",
     description:
       "Cleaning supplies, kitchen essentials, and household goods to keep your home running smoothly.",
-    image: "/Images/improved/Household3.jpg",
+    image: "/Images/improved/Household3.JPG",
     icon: Home,
   },
   {
     title: "County Home & Furniture",
     description:
       "Quality furniture and home décor to help you create a comfortable and stylish living space.",
-    image: "/Images/improved/Furniture.jpg",
+    image: "/Images/improved/Furniture.JPG",
     icon: Sofa,
   },
   {
     title: "Butchery",
     description:
       "Fresh, high-quality meat sourced and prepared to ensure the best taste and quality for every meal.",
-    image: "/Images/improved/Butchery.webp",
+    image: "/Images/Butchery.webp",
     icon: Beef,
   },
   {
     title: "County Fashion",
     description:
       "Affordable and stylish clothing for men, women, and children — for every occasion and every season.",
-    image: "/Images/improved/clothing.webp",
+    image: "/Images/clothing.webp",
     icon: Shirt,
   },
   {
     title: "Bags & Accessories",
     description:
       "Handbags, travel bags, belts, hats, scarves, and jewellery to complete every look, all in one place.",
-    image: "/Images/improved/fashion.webp",
+    image: "/Images/Services/fashion.webp",
     icon: ShoppingBag,
   },
   {
