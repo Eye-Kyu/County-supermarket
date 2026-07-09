@@ -6,15 +6,19 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 export default function Gallery() {
   const images = [
-    "/Images/Improved/Bakery.jpg",
-    "/Images/Improved/Groceries2.jpg",
-    "/Images/Improved/Electronics.jpg",
-    "/Images/Improved/aisle.jpg",
-    "/Images/Improved/Kids.jpg",
-    "/Images/Improved/Groceries3.jpg",
-    "/Images/Improved/Dairy.jpg",
-    "/Images/Improved/Kukuriko.jpg",
-    "/Images/Improved/Kukuriko2.jpg",
+    "/Images/improved/Bakery.jpg",
+    "/Images/improved/Groceries2.jpg",
+    "/Images/improved/Electronics.jpg",
+    "/Images/improved/aisle.jpg",
+    "/Images/improved/Kids.jpg",
+    "/Images/improved/Groceries3.jpg",
+    "/Images/improved/Dairy.jpg",
+    "/Images/improved/Kukuriko.jpg",
+    "/Images/improved/Kukuriko2.jpg",
+    "/Images/Services/fashion.webp",
+    "/Images/improved/kroadbranch.jpg",
+    "/Images/improved/Kids.jpg",
+    "/Images/clothing.webp",
   ];
 
   const [index, setIndex] = useState(0);
