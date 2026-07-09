@@ -199,7 +199,7 @@ export default function Contact() {
                     href="tel:+254722785022"
                     className="font-medium text-sm sm:text-base text-orange-100 hover:text-orange-300 transition-colors duration-200"
                   >
-                    0722785022
+                    +254722785022
                   </a>
                 </div>
               </div>
