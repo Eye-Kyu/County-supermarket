@@ -103,7 +103,12 @@ export default function Footer() {
 
           <div className="flex items-center gap-3 mt-3">
             <FaPhoneAlt className="text-orange-400 shrink-0" size={13} />
-            <span className="text-sm">0722 785 022</span>
+            <a
+              href="tel:+254722785022"
+              className="text-sm hover:text-orange-400 transition-colors duration-200"
+            >
+              <span className="text-sm">0722 785 022</span>
+            </a>
           </div>
         </div>
       </div>
