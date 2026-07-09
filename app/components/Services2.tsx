@@ -30,70 +30,70 @@ const departments: Department[] = [
     title: "County Bakery",
     description:
       "Freshly baked bread, cakes, pastries, and other bakery treats prepared daily for our customers.",
-    image: "/Images/Improved/Bakery.jpg",
+    image: "/Images/improved/Bakery.jpg",
     icon: Croissant,
   },
   {
     title: "County Deli",
     description:
       "Ready-to-eat meals, snacks, and freshly prepared dishes perfect for a quick and delicious bite.",
-    image: "/Images/Improved/Kukuriko.jpg",
+    image: "/Images/improved/Kukuriko.jpg",
     icon: Sandwich,
   },
   {
     title: "County Grocery",
     description:
       "A wide selection of groceries, pantry essentials, and household products for your everyday needs.",
-    image: "/Images/Improved/Groceries3.jpg",
+    image: "/Images/improved/Groceries3.jpg",
     icon: ShoppingCart,
   },
   {
     title: "County Electronics",
     description:
       "Home electronics, appliances, and everyday tech essentials — from the latest gadgets to the classics.",
-    image: "/Images/Improved/Electronics.jpg",
+    image: "/Images/improved/Electronics.jpg",
     icon: Tv,
   },
   {
     title: "County Household & Living",
     description:
       "Cleaning supplies, kitchen essentials, and household goods to keep your home running smoothly.",
-    image: "/Images/Improved/Household3.jpg",
+    image: "/Images/improved/Household3.jpg",
     icon: Home,
   },
   {
     title: "County Home & Furniture",
     description:
       "Quality furniture and home décor to help you create a comfortable and stylish living space.",
-    image: "/Images/Improved/Furniture.jpg",
+    image: "/Images/improved/Furniture.jpg",
     icon: Sofa,
   },
   {
     title: "Butchery",
     description:
       "Fresh, high-quality meat sourced and prepared to ensure the best taste and quality for every meal.",
-    image: "/Images/Butchery.webp",
+    image: "/Images/improved/Butchery.webp",
     icon: Beef,
   },
   {
     title: "County Fashion",
     description:
       "Affordable and stylish clothing for men, women, and children — for every occasion and every season.",
-    image: "/Images/clothing.webp",
+    image: "/Images/improved/clothing.webp",
     icon: Shirt,
   },
   {
     title: "Bags & Accessories",
     description:
       "Handbags, travel bags, belts, hats, scarves, and jewellery to complete every look, all in one place.",
-    image: "/Images/Services/fashion.webp",
+    image: "/Images/improved/fashion.webp",
     icon: ShoppingBag,
   },
   {
     title: "County Liquor",
     description:
       "A curated selection of wines, spirits, beers, and soft drinks to complement any occasion.",
-    image: "/Images/Improved/Liquor.jpg",
+    image: "/Images/improved/Liquor.jpg",
     icon: Wine,
   },
 ];
