@@ -18,6 +18,8 @@ export default function Gallery() {
     "/Images/Services/fashion.webp",
     "/Images/improved/kroadbranch.jpg",
     "/Images/clothing.webp",
+    "/Images/improved/Household3.JPG",
+    "/Images/improved/Furniture.JPG",
   ];
 
   const [index, setIndex] = useState(0);
