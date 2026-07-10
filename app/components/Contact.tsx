@@ -213,7 +213,7 @@ export default function Contact() {
 
             <div className="flex flex-wrap gap-4">
               <a
-                href="https://www.facebook.com/CountySupermarket"
+                href="https://www.facebook.com/profile.php?id=100048065005565"
                 target="_blank"
                 rel="noopener noreferrer"
                 aria-label="County Supermarket on Facebook"
